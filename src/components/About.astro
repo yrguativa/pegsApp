@@ -1,0 +1,72 @@
+---
+---
+
+<section class="about" id="about">
+  <div class="container about-container">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&h=500&fit=crop" alt="Person with dog" />
+    </div>
+    <div class="about-content">
+      <h2 class="section-title" style="text-align: left;">Caring for Your Pets Like Our Own</h2>
+      <p class="about-text">
+        At Elite Paws, we understand that your pet is part of your family. That's why we dedicate ourselves to providing the highest quality care with love and attention they deserve.
+      </p>
+      <p class="about-text">
+        Our team of certified professionals has years of experience in pet care, ensuring your furry friend receives the best treatment in a safe and nurturing environment.
+      </p>
+      <a href="#contact" class="btn btn-primary">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-background);
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-content .section-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-text {
+    color: var(--color-gray);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+  }
+
+  .about-content .btn {
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 968px) {
+    .about-container {
+      grid-template-columns: 1fr;
+    }
+
+    .about-content {
+      order: 1;
+    }
+
+    .about-image {
+      order: 2;
+    }
+
+    .about-content .section-title {
+      text-align: center;
+    }
+  }
+</style>

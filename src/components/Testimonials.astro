@@ -1,0 +1,104 @@
+---
+const testimonials = [
+  {
+    name: "Sarah Johnson",
+    role: "Pet Parent",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+    text: "Elite Paws has been amazing for my golden retriever. The team is caring and professional!"
+  },
+  {
+    name: "Michael Chen",
+    role: "Pet Parent",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+    text: "Best pet care service in town. My cat loves going there for grooming sessions."
+  },
+  {
+    name: "Emily Davis",
+    role: "Pet Parent",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+    text: "The boarding service gave me peace of mind while traveling. Highly recommend!"
+  }
+];
+---
+
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title">What Pet Parents Say</h2>
+    <p class="section-subtitle">Don't just take our word for it - hear from our happy clients</p>
+    
+    <div class="testimonials-grid">
+      {testimonials.map(testimonial => (
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src={testimonial.image} alt={testimonial.name} class="testimonial-avatar" />
+            <div>
+              <h4 class="testimonial-name">{testimonial.name}</h4>
+              <p class="testimonial-role">{testimonial.role}</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"{testimonial.text}"</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-white);
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .testimonial-card {
+    background: var(--color-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+  }
+
+  .testimonial-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .testimonial-name {
+    font-weight: 600;
+    color: var(--color-text);
+  }
+
+  .testimonial-role {
+    font-size: 0.875rem;
+    color: var(--color-gray);
+  }
+
+  .testimonial-text {
+    color: var(--color-gray);
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 968px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
