@@ -1,30 +1,39 @@
 ---
+interface Props {
+  t: {
+    (key: string): string;
+  };
+  lang: 'en' | 'es';
+}
+
+const { t, lang } = Astro.props;
+
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Pet Parent",
+    name: lang === 'en' ? "Sarah Johnson" : "Sarah Johnson",
+    role: lang === 'en' ? "Pet Parent" : "Dueño de Mascota",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
-    text: "Elite Paws has been amazing for my golden retriever. The team is caring and professional!"
+    text: lang === 'en' ? "Elite Paws has been amazing for my golden retriever. The team is caring and professional!" : "¡Elite Paws ha sido increíble para mi golden retriever. El equipo es cariñoso y profesional!"
   },
   {
-    name: "Michael Chen",
-    role: "Pet Parent",
+    name: lang === 'en' ? "Michael Chen" : "Michael Chen",
+    role: lang === 'en' ? "Pet Parent" : "Dueño de Mascota",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
-    text: "Best pet care service in town. My cat loves going there for grooming sessions."
+    text: lang === 'en' ? "Best pet care service in town. My cat loves going there for grooming sessions." : "El mejor servicio de cuidado de mascotas en la ciudad. Mi gato ama ir a las sesiones de peluquería."
   },
   {
-    name: "Emily Davis",
-    role: "Pet Parent",
+    name: lang === 'en' ? "Emily Davis" : "Emily Davis",
+    role: lang === 'en' ? "Pet Parent" : "Dueño de Mascota",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
-    text: "The boarding service gave me peace of mind while traveling. Highly recommend!"
+    text: lang === 'en' ? "The boarding service gave me peace of mind while traveling. Highly recommend!" : "El servicio de hospedaje me dio tranquilidad mientras viajaba. ¡Totalmente recomendado!"
   }
 ];
 ---
 
 <section class="testimonials">
   <div class="container">
-    <h2 class="section-title">What Pet Parents Say</h2>
-    <p class="section-subtitle">Don't just take our word for it - hear from our happy clients</p>
+    <h2 class="section-title">{t('testimonials.title')}</h2>
+    <p class="section-subtitle">{t('testimonials.subtitle')}</p>
     
     <div class="testimonials-grid">
       {testimonials.map(testimonial => (

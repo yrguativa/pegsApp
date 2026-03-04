@@ -1,0 +1,118 @@
+{
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "header": {
+      "bookNow": "Book Now"
+    },
+    "hero": {
+      "title": "Premium Pet Care for Your Furry Friend",
+      "subtitle": "Where your pet's comfort and happiness come first",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "features": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive care solutions tailored to your pet's needs",
+      "grooming": {
+        "title": "Grooming",
+        "description": "Professional grooming services to keep your pet looking and feeling their best."
+      },
+      "boarding": {
+        "title": "Boarding",
+        "description": "Safe and comfortable boarding services while you're away."
+      },
+      "walking": {
+        "title": "Walking",
+        "description": "Regular walks to keep your pet active and healthy."
+      },
+      "veterinary": {
+        "title": "Veterinary",
+        "description": "Expert veterinary care to ensure your pet's health and wellbeing."
+      }
+    },
+    "about": {
+      "title": "Caring for Your Pets Like Our Own",
+      "text1": "At Elite Paws, we understand that your pet is part of your family. That's why we dedicate ourselves to providing the highest quality care with love and attention they deserve.",
+      "text2": "Our team of certified professionals has years of experience in pet care, ensuring your furry friend receives the best treatment in a safe and nurturing environment.",
+      "contact": "Contact Us"
+    },
+    "testimonials": {
+      "title": "What Pet Parents Say",
+      "subtitle": "Don't just take our word for it - hear from our happy clients"
+    },
+    "cta": {
+      "title": "Ready to Give Your Pet the Best Care?",
+      "subtitle": "Book an appointment today and let us pamper your furry friend",
+      "button": "Book Now"
+    },
+    "footer": {
+      "description": "Premium pet care services for your furry friends.",
+      "quickLinks": "Quick Links",
+      "followUs": "Follow Us",
+      "copyright": "All rights reserved."
+    }
+  },
+  "es": {
+    "nav": {
+      "home": "Inicio",
+      "about": "Nosotros",
+      "services": "Servicios",
+      "contact": "Contacto"
+    },
+    "header": {
+      "bookNow": "Reservar Ahora"
+    },
+    "hero": {
+      "title": "Cuidado Premium para Tu Mejor Amigo Peludo",
+      "subtitle": "Donde el comfort y la felicidad de tu mascota son nuestra prioridad",
+      "getStarted": "Comenzar",
+      "learnMore": "Saber Más"
+    },
+    "features": {
+      "title": "Nuestros Servicios",
+      "subtitle": "Soluciones de cuidado integrales adaptadas a las necesidades de tu mascota",
+      "grooming": {
+        "title": "Peluquería",
+        "description": "Servicios profesionales de peluquería para que tu mascota luzca y se sienta increíble."
+      },
+      "boarding": {
+        "title": "Alojamiento",
+        "description": "Servicios de hospedaje seguros y cómodos mientras estás fuera."
+      },
+      "walking": {
+        "title": "Paseos",
+        "description": "Paseos regulares para mantener a tu mascota activa y saludable."
+      },
+      "veterinary": {
+        "title": "Veterinario",
+        "description": "Cuidado veterinario experto para asegurar la salud y bienestar de tu mascota."
+      }
+    },
+    "about": {
+      "title": "Cuidando a Tu Mascota Como Propia",
+      "text1": "En Elite Paws, entendemos que tu mascota es parte de tu familia. Por eso nos dedicamos a proporcionar la más alta calidad de cuidado con amor y atención que merecen.",
+      "text2": "Nuestro equipo de profesionales certificados tiene años de experiencia en el cuidado de mascotas, asegurando que tu amigo peludo reciba el mejor tratamiento en un entorno seguro y enriquecedor.",
+      "contact": "Contáctanos"
+    },
+    "testimonials": {
+      "title": "Lo que Dicen los Dueños de Mascotas",
+      "subtitle": "No solo tomes nuestra palabra - escucha a nuestros clientes felices"
+    },
+    "cta": {
+      "title": "¿Listo para Darle a Tu Mascota el Mejor Cuidado?",
+      "subtitle": "Reserva una cita hoy y deja que mimemos a tu amigo peludo",
+      "button": "Reservar Ahora"
+    },
+    "footer": {
+      "description": "Servicios premium de cuidado para tus mejores amigos peludos.",
+      "quickLinks": "Enlaces Rápidos",
+      "followUs": "Síguenos",
+      "copyright": "Todos los derechos reservados."
+    }
+  }
+}

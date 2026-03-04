@@ -1,14 +1,21 @@
 ---
+interface Props {
+  t: {
+    (key: string): string;
+  };
+}
+
+const { t } = Astro.props;
 ---
 
 <section class="hero" id="home">
   <div class="container hero-container">
     <div class="hero-content">
-      <h1 class="hero-title">Premium Pet Care for Your Furry Friend</h1>
-      <p class="hero-subtitle">Where your pet's comfort and happiness come first</p>
+      <h1 class="hero-title">{t('hero.title')}</h1>
+      <p class="hero-subtitle">{t('hero.subtitle')}</p>
       <div class="hero-buttons">
-        <a href="#book" class="btn btn-primary">Get Started</a>
-        <a href="#about" class="btn btn-secondary">Learn More</a>
+        <a href="#book" class="btn btn-primary">{t('hero.getStarted')}</a>
+        <a href="#about" class="btn btn-secondary">{t('hero.learnMore')}</a>
       </div>
     </div>
     <div class="hero-image">

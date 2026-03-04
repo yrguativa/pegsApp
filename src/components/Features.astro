@@ -1,39 +1,43 @@
 ---
+interface Props {
+  t: {
+    (key: string): string;
+  };
+}
+
+const { t } = Astro.props;
+
 const services = [
   {
     icon: "✂️",
-    title: "Grooming",
-    description: "Professional grooming services to keep your pet looking and feeling their best."
+    key: "grooming"
   },
   {
     icon: "🏠",
-    title: "Boarding",
-    description: "Safe and comfortable boarding services while you're away."
+    key: "boarding"
   },
   {
     icon: "🚶",
-    title: "Walking",
-    description: "Regular walks to keep your pet active and healthy."
+    key: "walking"
   },
   {
     icon: "🏥",
-    title: "Veterinary",
-    description: "Expert veterinary care to ensure your pet's health and wellbeing."
+    key: "veterinary"
   }
 ];
 ---
 
 <section class="features" id="services">
   <div class="container">
-    <h2 class="section-title">Our Services</h2>
-    <p class="section-subtitle">Comprehensive care solutions tailored to your pet's needs</p>
+    <h2 class="section-title">{t('features.title')}</h2>
+    <p class="section-subtitle">{t('features.subtitle')}</p>
     
     <div class="features-grid">
       {services.map(service => (
         <div class="feature-card">
           <div class="feature-icon">{service.icon}</div>
-          <h3 class="feature-title">{service.title}</h3>
-          <p class="feature-description">{service.description}</p>
+          <h3 class="feature-title">{t(`features.${service.key}.title`)}</h3>
+          <p class="feature-description">{t(`features.${service.key}.description`)}</p>
         </div>
       ))}
     </div>
