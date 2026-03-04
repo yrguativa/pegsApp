@@ -7,28 +7,6 @@ interface Props {
 }
 
 const { t, lang } = Astro.props;
-
-const testimonials = [
-  {
-    text: lang === 'en' ? "The entire process was seamless. From the first video call to the white-glove delivery, Elite Paws demonstrated why they are the best in the business. Our Duke is perfect." : "Todo el proceso fue impecable. Desde la primera videollamada hasta la entrega de primera clase, Elite Paws demostró por qué son los mejores. Nuestro Duke es perfecto.",
-    name: "Jonathan Wickers",
-    location: lang === 'en' ? "New York City, NY" : "Nueva York, EE.UU.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA8y40NS2bGG9kzqNUw48wA9BQza8EdDhWZ6atQSByojDeT27ArLtyF7Ion8dh0NSwl6SUCBIV0nvvCyuqJVtfoJ5hRaHPesbl7JeaKNeBeBDXwtgl5Zo2cOxeMC4sQVKjZFdOc8LfY5b-tNSJj-mm3nLL0EhlXUs38gjfLEQeQu_UZdOnTYdNi7pgox5k12nisfirfBNx4JoceMIpGJ7tViCJniOmxYl5-MkK8BvN8TA-TjpeofA6WP5F7eC6C9wf4sOKZqQ9knxMY"
-  },
-  {
-    text: lang === 'en' ? "I've had many dogs, but the temperament of our Lady Isabella is just on another level. You can tell they put so much love and professional training into these puppies." : "He tenido muchos perros, pero el temperamento de nuestra Lady Isabella está en otro nivel. Se nota que ponen tanto amor y entrenamiento profesional en estos cachorros.",
-    name: "Elizabeth Sterling",
-    location: lang === 'en' ? "London, UK" : "Londres, Reino Unido",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC9ELXQ3eERumbHwr3PMwDFOVsEQQwXR3MedX_gQYavbCDCPjp1ob-d7zJT9k-Hm-x1QaPTuHZNkoiVJNczXeQ2Yle_uG0aAGbc1ovkDgesKshVUBjybxJlRNC6QIbQ91mlVw3mm7Mdfg1Z7fu3TcDSrhpOi-lddJ02V4p6hQfvtVi1HXM7gt4HADMjKJfxGfMmUMffVESq97PkNY-DjVensYrdefp2EkAjZyZWDyPGU5D_OoDbVAs2Lf3S4AojO7GKA8KblMGMJLVZ",
-    featured: true
-  },
-  {
-    text: lang === 'en' ? "Unmatched quality and service. They provided us with nutrition guides, health records, and even a starter kit that was incredibly helpful. Highly recommend." : "Calidad y servicio inigualables. Nos proporcionaron guías de nutrición, registros de salud e incluso un kit de inicio que fue increíblemente útil. Totalmente recomendado.",
-    name: "Marcus Chen",
-    location: lang === 'en' ? "San Francisco, CA" : "San Francisco, EE.UU.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCBA3Ln_igSHeM3b6yNTEei-BNaQi_i6ctgD9-d0Wt9pFmA8IrPzT6BU6TMedBmcXVcq_VjLYRRS8NthykAfgrlQ4e3n7YuM5OZzJ-g1-B5pb2ekXiIUXUNZmnIaFsJmgIgdoYGfkGbCQzca_2kpafHYAmGY1T8JuZFTh9sLEdycHRGtheE-Tik6bBdFcoxL6kYHjtIXtnB9PitQ-AXN3qPmKsvqlCWfU5FFFsYzHgzJYDTHg88Gy80vIAwi9bqkzfwzxGYuLZ2PUcR"
-  }
-];
 ---
 
 <section class="py-32 bg-forest-dark relative overflow-hidden" id="testimonials">
@@ -48,22 +26,71 @@ const testimonials = [
         </button>
       </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {testimonials.map((testimonial) => (
-        <div class:list={["glass-effect p-10 rounded-3xl flex flex-col h-full hover:border-primary/30 transition-all", testimonial.featured && "border-primary/40 shadow-[0_0_30px_rgba(30,215,96,0.1)]"]}>
-          <div class="text-primary mb-8">
-            <span class="material-symbols-outlined text-5xl">format_quote</span>
-          </div>
-          <p class="text-slate-300 italic mb-10 flex-grow text-lg leading-relaxed">"{testimonial.text}"</p>
-          <div class="flex items-center gap-5">
-            <img class="w-14 h-14 rounded-full object-cover border-2 border-primary/20" src={testimonial.image} alt={testimonial.name} />
-            <div>
-              <h4 class="text-white font-black text-sm uppercase">{testimonial.name}</h4>
-              <p class="text-primary font-bold text-[10px] uppercase tracking-widest">{testimonial.location}</p>
-            </div>
-          </div>
-        </div>
-      ))}
+    <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="col-span-full text-center text-slate-400">
+        <span class="inline-block animate-pulse">Loading testimonials...</span>
+      </div>
     </div>
   </div>
 </section>
+
+<script define:vars={{ lang }}>
+const CACHE_KEY = 'elite_paws_data';
+const CACHE_DURATION = 4 * 60 * 60 * 1000;
+
+async function getCachedData() {
+  const cached = localStorage.getItem(CACHE_KEY);
+  
+  if (cached) {
+    try {
+      const { data, timestamp } = JSON.parse(cached);
+      const now = Date.now();
+      
+      if (now - timestamp < CACHE_DURATION) {
+        return data;
+      }
+    } catch (e) {}
+  }
+  
+  const response = await fetch('/data.json');
+  const data = await response.json();
+  
+  localStorage.setItem(CACHE_KEY, JSON.stringify({
+    data,
+    timestamp: Date.now()
+  }));
+  
+  return data;
+}
+
+async function renderTestimonials() {
+  const data = await getCachedData();
+  const testimonials = data.testimonials;
+  const grid = document.getElementById('testimonials-grid');
+  
+  if (!grid) return;
+  
+  grid.innerHTML = testimonials.map(testimonial => {
+    const text = lang === 'es' ? testimonial.text_es : testimonial.text;
+    const location = lang === 'es' ? testimonial.location_es : testimonial.location;
+    
+    return `
+      <div class="glass-effect p-10 rounded-3xl flex flex-col h-full hover:border-primary/30 transition-all ${testimonial.featured ? 'border-primary/40 shadow-[0_0_30px_rgba(30,215,96,0.1)]' : ''}">
+        <div class="text-primary mb-8">
+          <span class="material-symbols-outlined text-5xl">format_quote</span>
+        </div>
+        <p class="text-slate-300 italic mb-10 flex-grow text-lg leading-relaxed">"${text}"</p>
+        <div class="flex items-center gap-5">
+          <img class="w-14 h-14 rounded-full object-cover border-2 border-primary/20" src="${testimonial.image}" alt="${testimonial.name}" />
+          <div>
+            <h4 class="text-white font-black text-sm uppercase">${testimonial.name}</h4>
+            <p class="text-primary font-bold text-[10px] uppercase tracking-widest">${location}</p>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+document.addEventListener('DOMContentLoaded', renderTestimonials);
+</script>

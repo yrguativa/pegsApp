@@ -1,0 +1,113 @@
+{
+  "puppies": [
+    {
+      "id": "cooper",
+      "name": "Cooper",
+      "breed": "Golden Retriever",
+      "breed_es": "Golden Retriever",
+      "price": "$2,400",
+      "age": "10 Weeks",
+      "age_es": "10 Semanas",
+      "gender": "Male",
+      "gender_es": "Macho",
+      "badge": "new",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBhD6ukIOYKh95DpeYw2v5qg29QiJy3mhrL2SCafhG67gLBD4sbRV1O-F17DVmbtqNPwxz-YqP8-d2LPz3fFmy6Ridna5IjsxSpikyWoqyvndtLLVErUjR0jl2brj4ybsN_CI_r3w7lS6TegW3CikD_Qox5bQIA3FeGHEUs4na3ojbweRZDj8JTjovVbGv-QB7JAAIKKRHCX0WmFf6m8ERRNQRmoxRI0oqyx5cD4GLp-12ZMY3BH7oH6nlUwTrAH0YVj15LVCGGO6lP"
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "breed": "Golden Retriever",
+      "breed_es": "Golden Retriever",
+      "price": "$2,800",
+      "age": "12 Weeks",
+      "age_es": "12 Semanas",
+      "gender": "Female",
+      "gender_es": "Hembra",
+      "badge": "reserved",
+      "available": false,
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDP7j0oHmaAtcxrRetC2Bhy4b4for8ahJOy-ccvBc_WiD64_qABR9VdRsA-8VVSCMJ4ZYzI-buypbgfXoqaHS7m8_p1jMgm8867wePeG-Aqp7-HSd220UijFhKi8gaQKka6pwKX9ROMgUhuFYYb7ynbydsSpUQelT0uHA0ak8XyG8d3acigEbX1PitKxNUr_N9iPmIKOrmnGFc_MhZsDBldhjgHCh9AX_oOe7N2P4NUCgzWejJI9csvfazU_KcMgvm0PejZfFz0Ntk5"
+    },
+    {
+      "id": "oliver",
+      "name": "Oliver",
+      "breed": "Miniature Poodle",
+      "breed_es": "Caniche Miniatura",
+      "price": "$5,200",
+      "age": "8 Weeks",
+      "age_es": "8 Semanas",
+      "gender": "Male",
+      "gender_es": "Macho",
+      "badge": "popular",
+      "available": true,
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCL8p86Ct_OlTq3MP4Xuf7wuw-CPGlMZyXKOCHJBb_D2Kcu04sPjkszAkaz7f-IhfVTEnug7GL_H8KuuQi98d2gYo7TxIBdQbR9BrGuU83S-klc94tFv5qwpnPSeRZrPS4BIT7c9Ds08qGEmmvdPhc5bqHhhxsFmCnxKykOKMKtoxYIY5NwMZ6KRVf5Hd-gykdUEBAz8pdrRwC-mwsAHM2TKoTRqZqEwlfe8YYjv8lKP0IJiq0rMA99e0c6KrQzbVpmXu4W0FEVXb9P"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "jonathan",
+      "name": "Jonathan Wickers",
+      "location": "New York City, NY",
+      "location_es": "Nueva York, EE.UU.",
+      "text": "The entire process was seamless. From the first video call to the white-glove delivery, Elite Paws demonstrated why they are the best in the business. Our Duke is perfect.",
+      "text_es": "Todo el proceso fue impecable. Desde la primera videollamada hasta la entrega de primera clase, Elite Paws demostró por qué son los mejores. Nuestro Duke es perfecto.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA8y40NS2bGG9kzqNUw48wA9BQza8EdDhWZ6atQSByojDeT27ArLtyF7Ion8dh0NSwl6SUCBIV0nvvCyuqJVtfoJ5hRaHPesbl7JeaKNeBeBDXwtgl5Zo2cOxeMC4sQVKjZFdOc8LfY5b-tNSJj-mm3nLL0EhlXUs38gjfLEQeQu_UZdOnTYdNi7pgox5k12nisfirfBNx4JoceMIpGJ7tViCJniOmxYl5-MkK8BvN8TA-TjpeofA6WP5F7eC6C9wf4sOKZqQ9knxMY",
+      "featured": false
+    },
+    {
+      "id": "elizabeth",
+      "name": "Elizabeth Sterling",
+      "location": "London, UK",
+      "location_es": "Londres, Reino Unido",
+      "text": "I've had many dogs, but the temperament of our Lady Isabella is just on another level. You can tell they put so much love and professional training into these puppies.",
+      "text_es": "He tenido muchos perros, pero el temperamento de nuestra Lady Isabella está en otro nivel. Se nota que ponen tanto amor y entrenamiento profesional en estos cachorros.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC9ELXQ3eERumbHwr3PMwDFOVsEQQwXR3MedX_gQYavbCDCPjp1ob-d7zJT9k-Hm-x1QaPTuHZNkoiVJNczXeQ2Yle_uG0aAGbc1ovkDgesKshVUBjybxJlRNC6QIbQ91mlVw3mm7Mdfg1Z7fu3TcDSrhpOi-lddJ02V4p6hQfvtVi1HXM7gt4HADMjKJfxGfMmUMffVESq97PkNY-DjVensYrdefp2EkAjZyZWDyPGU5D_OoDbVAs2Lf3S4AojO7GKA8KblMGMJLVZ",
+      "featured": true
+    },
+    {
+      "id": "marcus",
+      "name": "Marcus Chen",
+      "location": "San Francisco, CA",
+      "location_es": "San Francisco, EE.UU.",
+      "text": "Unmatched quality and service. They provided us with nutrition guides, health records, and even a starter kit that was incredibly helpful. Highly recommend.",
+      "text_es": "Calidad y servicio inigualables. Nos proporcionaron guías de nutrición, registros de salud e incluso un kit de inicio que fue increíblemente útil. Totalmente recomendado.",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCBA3Ln_igSHeM3b6yNTEei-BNaQi_i6ctgD9-d0Wt9pFmA8IrPzT6BU6TMedBmcXVcq_VjLYRRS8NthykAfgrlQ4e3n7YuM5OZzJ-g1-B5pb2ekXiIUXUNZmnIaFsJmgIgdoYGfkGbCQzca_2kpafHYAmGY1T8JuZFTh9sLEdycHRGtheE-Tik6bBdFcoxL6kYHjtIXtnB9PitQ-AXN3qPmKsvqlCWfU5FFFsYzHgzJYDTHg88Gy80vIAwi9bqkzfwzxGYuLZ2PUcR",
+      "featured": false
+    }
+  ],
+  "highlights": [
+    {
+      "id": "daily-care",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCpAhVoX2p83E0uscneVNl7QtGt7iGIgd45svc5LNdweT73mcHSVO16GBGfEwnNi3BLnigEY8Gfu2ERfa6dwzcBIcFobRzuEU0_89NpzUPU6_vex3_kQcJJJq8FGXmnC2i0fqD1No7tPA1OAOnk0DM2jdZ4G9grO5H1MwNJOG2EZkdS_o6cdHy-0SDev__4cdnaY9ngmsyAfDkeFU5bJPulHpIMcR5uxQOAqki4BnkiFs1iBXDdAWInYKbRELwrQyBeUwIspgSP8-ty",
+      "label": "dailyCare"
+    },
+    {
+      "id": "training",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCWEwVGMHj235s5WFSozweZokvgSenY7X2lvbZlLplOVbTGXjb3zvYLhYmEaS5_lMwZS0eeEmNBxNuR_bDQzTwfoH296kHBFyWGJRxIH0s5m7FnCdM2lKgJzB8o-j3sakWPByvoYY8qiAgFNWbDupRCeNcBtNyONmVT29QLrUtHr770MmheGPWVQzf9Hr6Ji2G0YjbF_-5FoRcFRgQUPT0BlK-7Orzsu2iz5Wmz6Ch33K7Mcc_-5aeipcEvwcezobXvje7aqGrW8j04",
+      "label": "training"
+    },
+    {
+      "id": "rest-time",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB4cwbDBJDw-g468Uvd4XJwQ0w2I4_xwJnitiQ-8zSOEVSJkS_vUM_sqkqlVQ6V9cQfYFTRgl7jnC1NLm8TnE8TXEBso736jsI5-HhjMPa1UPvE6bv6GXd9gr_Bh30Y4Y5sF6fSLdh-Nfkc63pEQDNFg5IX7pSAUpn1LhgAFIGqTlwDuDhQnHdWaRyBz-llJbHxOyoyib0KUfSBoDuMN8rdhb-pnV7QLOz5NnNrsiGXFL_a5JJyRoLUMHsGgxgxF4S3M2zvkmQXFbiS",
+      "label": "restTime"
+    },
+    {
+      "id": "nutrition",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA7M6xK-B3ssS__0jS5JG0GeIxagPJIKo4dHGKgQKx_xAaKrkCKk73IcPsWYayg160H7UT9hawB0GHfd_X9UHziKXI7LmJv5R-9qWVOM3iYRwLSRGlwDX26OjkLPU2bHepmTqlytVRdqVug6QWoXgU0nt_H1taDeoBeC2iuqQVcpYPSqPYetEElehXT7blNrP-FL1eTPSyxTci1rg9FKj0wkBJLP-GNRvq10TSTBbxwhYrOwyCRNCMkV3xox8IOPE6BIgo6gvmi6X7B",
+      "label": "nutrition"
+    },
+    {
+      "id": "grooming",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA9jFSqKcM3M97ajEpsL7TmHH48aZ5Hq1zA_-_SYU-iNljzh5nfQNV1aq0iQpCrSB-XuGi2-2y_3V7GLoQn6i32e_gEq2tvJ24MhPq8r34dRRw1b9gmtChohl3ng3ay9risTbgrkxJjHygV0Cja1BdgknPSDtV_-yFSLcWdRf4WZPyjgfBMl_oimw3PbBP3ajG_WWX9V_ODB1CMW2Y8N2K4AR_9i2NhzejFwiqbPrEgs6f39xd9U_nQH41loLgWi-tYCM3Ad8JjGaS-",
+      "label": "grooming"
+    },
+    {
+      "id": "deliveries",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB--9BcnNjud24mbY3Ob7s_xbPaKmY1kl-YBnbEftapxy14LHGgUN4NZIVt_9y1udaL72WcodgOmQu0A1MCs94OkOBGwP3SWl2cJ1vHmTeHyBoX8EQ6qgsUOZIbJjFm9qjthtsJFNgQYU6L9W3RxO1ixlab8Of6ZBZB5jlNSoJ3coCXzwzpUEFkWP39ej74T5QC5BJRsPGxxDLytkiM8uQsIU300RZ7v7qQLTrq7TLoji8LqwoTNacSgadDb3JfDiNJAiwbYvuQUPKa",
+      "label": "deliveries"
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2024-01-01T00:00:00Z",
+    "cacheDuration": 14400
+  }
+}
