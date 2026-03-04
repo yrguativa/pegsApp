@@ -64,8 +64,8 @@ Por cada funcionalidad completar un commit con mensaje convencional:
 - `deploy: release v1.0.0`
 
 ## GitHub Pages Configuration
-- Site URL: `https://username.github.io/elite-paws/`
-- Base: `/elite-paws/`
+- Site URL: `https://yrguativa.github.io/pegsApp/`
+- Base: `/pegsApp/`
 - Usar `@astrojs/static`
 - Workflow: `.github/workflows/deploy.yml`
 

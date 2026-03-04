@@ -2,8 +2,8 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://yilmerguativa.github.io',
-  base: '/elite-paws/',
+  site: 'https://yrguativa.github.io',
+  base: '/pegsApp/',
   build: {
     format: 'file'
   }
