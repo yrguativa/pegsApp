@@ -21,7 +21,7 @@ export async function getCachedData() {
   }
   
   console.log('Fetching fresh data');
-  const response = await fetch('/data.json');
+  const response = await fetch('/pegsApp/data.json');
   const data = await response.json();
   
   localStorage.setItem(CACHE_KEY, JSON.stringify({
