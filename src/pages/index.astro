@@ -9,7 +9,8 @@
     <title>Elite Paws - Redirecting...</title>
     <script is:inline>
       const lang = navigator.language || navigator.userLanguage;
-      const redirect = lang.startsWith('es') ? '/es' : '/en';
+      const base = '/pegsApp';
+      const redirect = lang.startsWith('es') ? base + '/es' : base + '/en';
       window.location.href = redirect;
     </script>
   </head>

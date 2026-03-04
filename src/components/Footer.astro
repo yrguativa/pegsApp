@@ -7,6 +7,7 @@ interface Props {
 }
 
 const { t, lang } = Astro.props;
+const base = '/pegsApp';
 ---
 
 <footer class="bg-forest-dark border-t border-white/5 py-24">
@@ -14,8 +15,10 @@ const { t, lang } = Astro.props;
     <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
       <div class="col-span-1">
         <div class="flex flex-col items-start leading-none mb-8">
-          <h2 class="text-2xl font-black tracking-tight text-white italic uppercase leading-none">Elite Paws</h2>
-          <span class="text-[10px] text-primary font-bold tracking-[0.3em] ml-0.5">EST. 2024</span>
+          <a href={`${base}/${lang}`}>
+            <h2 class="text-2xl font-black tracking-tight text-white italic uppercase leading-none">Elite Paws</h2>
+            <span class="text-[10px] text-primary font-bold tracking-[0.3em] ml-0.5">EST. 2024</span>
+          </a>
         </div>
         <p class="text-slate-400 text-sm leading-relaxed mb-8">
           {t('footer.description')}
