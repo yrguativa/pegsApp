@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Corona -->
+  <path d="M20 35 L25 20 L35 30 L50 10 L65 30 L75 20 L80 35" stroke="#1ed760" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="25" cy="18" r="4" fill="#1ed760"/>
+  <circle cx="50" cy="8" r="5" fill="#1ed760"/>
+  <circle cx="75" cy="18" r="4" fill="#1ed760"/>
+  
+  <!-- Huella de cachorro - main pad -->
+  <ellipse cx="50" cy="65" rx="18" ry="14" fill="#1ed760" opacity="0.9"/>
+  
+  <!-- Huellas de dedos -->
+  <ellipse cx="30" cy="42" rx="7" ry="9" fill="#1ed760" opacity="0.9"/>
+  <ellipse cx="42" cy="35" rx="7" ry="9" fill="#1ed760" opacity="0.9"/>
+  <ellipse cx="58" cy="35" rx="7" ry="9" fill="#1ed760" opacity="0.9"/>
+  <ellipse cx="70" cy="42" rx="7" ry="9" fill="#1ed760" opacity="0.9"/>
+</svg>
