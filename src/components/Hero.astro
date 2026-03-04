@@ -8,90 +8,33 @@ interface Props {
 const { t } = Astro.props;
 ---
 
-<section class="hero" id="home">
-  <div class="container hero-container">
-    <div class="hero-content">
-      <h1 class="hero-title">{t('hero.title')}</h1>
-      <p class="hero-subtitle">{t('hero.subtitle')}</p>
-      <div class="hero-buttons">
-        <a href="#book" class="btn btn-primary">{t('hero.getStarted')}</a>
-        <a href="#about" class="btn btn-secondary">{t('hero.learnMore')}</a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop" alt="Happy dog" />
+<section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+  <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-gradient-to-b from-forest-dark/70 via-forest-dark/40 to-forest-dark z-10"></div>
+    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuyx5wwaP38XOtjpbfeKc75zOdd_fxbLuWWMxXYt-2druYjEpavyiup8_3lCR4Fy7EWw1qT1dtUKCon6t8f5-78Z7vMkqdz2sErzJuTKoYD8fk6mc1Bz6N8b7lOtGuvCSOL5ue6-v6AOlYkVh0JYaZOgrWon5KcOpv__1d8nkzGuXPdTb26gMJ3T6KGcdZZ-2wzqhuQfdbu4ZRG14MqpjIiERt1btq7VtRwAuTCyUR3LJ85EDgatHKfv4AYVjowgzDjdbeNl_T3-DJ" alt="Hero dog" />
+  </div>
+  <div class="relative z-20 text-center px-6 max-w-4xl mx-auto">
+    <span class="text-primary uppercase tracking-[0.5em] text-xs font-black mb-6 block drop-shadow-sm">{t('hero.badge')}</span>
+    <h1 class="text-5xl md:text-8xl font-black text-white leading-[1] tracking-tight mb-8">
+      {t('hero.title')} <br/><span class="text-primary italic text-glow">{t('hero.titleHighlight')}</span>
+    </h1>
+    <p class="text-lg md:text-xl text-slate-200 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+      {t('hero.subtitle')}
+    </p>
+    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+      <button class="w-full sm:w-auto rounded-full bg-primary px-10 py-5 text-forest-dark font-black text-lg hover:scale-105 transition-all shadow-[0_10px_30px_rgba(30,215,96,0.4)]">
+        {t('hero.ctaPrimary')}
+      </button>
+      <button class="group flex items-center gap-3 rounded-full bg-white/5 backdrop-blur-md border border-white/10 px-8 py-5 text-white font-bold text-lg hover:bg-white/10 transition-all">
+        <span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">play_circle</span>
+        {t('hero.ctaSecondary')}
+      </button>
     </div>
   </div>
+  <div class="fixed bottom-8 right-8 z-[60]">
+    <button class="flex items-center justify-center rounded-full h-16 w-16 md:w-auto md:px-6 bg-primary text-forest-dark shadow-[0_0_30px_rgba(30,215,96,0.5)] hover:scale-110 transition-transform gap-3 group">
+      <span class="material-symbols-outlined text-3xl font-bold">chat</span>
+      <span class="hidden md:block font-black text-sm uppercase">{t('hero.chat')}</span>
+    </button>
+  </div>
 </section>
-
-<style>
-  .hero {
-    padding: 8rem 0 4rem;
-    background: linear-gradient(135deg, var(--color-background) 0%, #fff 100%);
-  }
-
-  .hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-  }
-
-  .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: var(--color-text);
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.25rem;
-    color: var(--color-gray);
-    margin-bottom: 2rem;
-    max-width: 500px;
-  }
-
-  .hero-buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .hero-image {
-    position: relative;
-  }
-
-  .hero-image img {
-    width: 100%;
-    border-radius: var(--border-radius);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  }
-
-  @media (max-width: 968px) {
-    .hero-container {
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
-
-    .hero-content {
-      order: 1;
-    }
-
-    .hero-image {
-      order: 2;
-    }
-
-    .hero-subtitle {
-      margin: 0 auto 2rem;
-    }
-
-    .hero-buttons {
-      justify-content: center;
-    }
-
-    .hero-title {
-      font-size: 2.5rem;
-    }
-  }
-</style>

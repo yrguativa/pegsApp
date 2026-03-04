@@ -1,0 +1,91 @@
+---
+interface Props {
+  t: {
+    (key: string): string;
+  };
+  lang: 'en' | 'es';
+}
+
+const { t, lang } = Astro.props;
+
+const pups = [
+  {
+    name: "Cooper",
+    breed: "Golden Retriever",
+    price: "$2,400",
+    age: "10 Weeks",
+    gender: "Male",
+    badge: "new",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBhD6ukIOYKh95DpeYw2v5qg29QiJy3mhrL2SCafhG67gLBD4sbRV1O-F17DVmbtqNPwxz-YqP8-d2LPz3fFmy6Ridna5IjsxSpikyWoqyvndtLLVErUjR0jl2brj4ybsN_CI_r3w7lS6TegW3CikD_Qox5bQIA3FeGHEUs4na3ojbweRZDj8JTjovVbGv-QB7JAAIKKRHCX0WmFf6m8ERRNQRmoxRI0oqyx5cD4GLp-12ZMY3BH7oH6nlUwTrAH0YVj15LVCGGO6lP"
+  },
+  {
+    name: "Luna",
+    breed: "Golden Retriever",
+    price: "$2,800",
+    age: "12 Weeks",
+    gender: "Female",
+    badge: "reserved",
+    available: false,
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDP7j0oHmaAtcxrRetC2Bhy4b4for8ahJOy-ccvBc_WiD64_qABR9VdRsA-8VVSCMJ4ZYzI-buypbgfXoqaHS7m8_p1jMgm8867wePeG-Aqp7-HSd220UijFhKi8gaQKka6pwKX9ROMgUhuFYYb7ynbydsSpUQelT0uHA0ak8XyG8d3acigEbX1PitKxNUr_N9iPmIKOrmnGFc_MhZsDBldhjgHCh9AX_oOe7N2P4NUCgzWejJI9csvfazU_KcMgvm0PejZfFz0Ntk5"
+  },
+  {
+    name: "Oliver",
+    breed: "Miniature Poodle",
+    price: "$5,200",
+    age: "8 Weeks",
+    gender: "Male",
+    badge: "popular",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCL8p86Ct_OlTq3MP4Xuf7wuw-CPGlMZyXKOCHJBb_D2Kcu04sPjkszAkaz7f-IhfVTEnug7GL_H8KuuQi98d2gYo7TxIBdQbR9BrGuU83S-klc94tFv5qwpnPSeRZrPS4BIT7c9Ds08qGEmmvdPhc5bqHhhxsFmCnxKykOKMKtoxYIY5NwMZ6KRVf5Hd-gykdUEBAz8pdrRwC-mwsAHM2TKoTRqZqEwlfe8YYjv8lKP0IJiq0rMA99e0c6KrQzbVpmXu4W0FEVXb9P"
+  }
+];
+---
+
+<section class="py-32 bg-forest-dark" id="puppies">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-20">
+      <h2 class="text-5xl font-black text-white mb-6 uppercase tracking-tight">{t('pups.title')}</h2>
+      <div class="w-24 h-1.5 bg-primary mx-auto rounded-full mb-8"></div>
+      <p class="text-slate-300 max-w-2xl mx-auto text-lg">{t('pups.subtitle')}</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      {pups.map((pup) => (
+        <div class="bg-forest-card rounded-[2.5rem] overflow-hidden border border-white/5 group hover:border-primary/30 transition-all duration-500 shadow-xl">
+          <div class="relative aspect-square overflow-hidden m-4 rounded-[2rem]">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src={pup.image} alt={pup.name} />
+            <div class:list={["absolute top-4 left-4 text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest", pup.badge === 'new' ? 'bg-primary text-forest-dark' : pup.badge === 'reserved' ? 'bg-white/20 backdrop-blur-md text-white' : 'bg-primary text-forest-dark']}>
+              {t(`pups.badges.${pup.badge}`)}
+            </div>
+          </div>
+          <div class="p-8 pt-2">
+            <div class="flex justify-between items-start mb-6">
+              <div>
+                <h3 class="text-2xl font-black text-white tracking-tight">{pup.name}</h3>
+                <p class="text-slate-400 text-sm">{lang === 'en' ? pup.breed : (pup.breed === 'Golden Retriever' ? 'Golden Retriever' : 'Caniche Miniatura')}</p>
+              </div>
+              <span class="text-primary font-black text-2xl">{pup.price}</span>
+            </div>
+            <div class="flex items-center justify-between mb-8 pb-6 border-b border-white/5">
+              <div class="flex gap-2">
+                <span class="material-symbols-outlined text-primary text-sm">cake</span>
+                <span class="text-sm text-slate-300">{pup.age}</span>
+              </div>
+              <div class="flex gap-2">
+                <span class="material-symbols-outlined text-primary text-sm">pets</span>
+                <span class="text-sm text-slate-300">{pup.gender === 'Male' ? (lang === 'en' ? 'Male' : 'Macho') : (lang === 'en' ? 'Female' : 'Hembra')}</span>
+              </div>
+            </div>
+            {pup.available !== false ? (
+              <button class="w-full py-4 rounded-2xl bg-primary text-forest-dark font-black tracking-widest uppercase hover:bg-primary-dark transition-all flex items-center justify-center gap-2">
+                {t('pups.viewDetails')} <span class="material-symbols-outlined text-sm">favorite</span>
+              </button>
+            ) : (
+              <button class="w-full py-4 rounded-2xl border border-white/10 text-slate-500 font-black tracking-widest uppercase cursor-not-allowed">
+                {t('pups.notAvailable')}
+              </button>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

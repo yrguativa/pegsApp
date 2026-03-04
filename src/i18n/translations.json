@@ -1,118 +1,186 @@
 {
   "en": {
     "nav": {
-      "home": "Home",
-      "about": "About",
-      "services": "Services",
-      "contact": "Contact"
+      "available": "Available Puppies",
+      "story": "Our Story",
+      "process": "Process",
+      "testimonials": "Testimonials"
     },
     "header": {
-      "bookNow": "Book Now"
+      "inquire": "INQUIRE NOW"
     },
     "hero": {
-      "title": "Premium Pet Care for Your Furry Friend",
-      "subtitle": "Where your pet's comfort and happiness come first",
-      "getStarted": "Get Started",
-      "learnMore": "Learn More"
+      "badge": "Elite Breeding",
+      "title": "Discover Your",
+      "titleHighlight": "Perfect",
+      "subtitle": "Premium genetics for discerning families. Experience the gold standard of canine excellence.",
+      "ctaPrimary": "Available Pups",
+      "ctaSecondary": "Meet the Parents",
+      "chat": "Talk to a Breeder"
     },
-    "features": {
-      "title": "Our Services",
-      "subtitle": "Comprehensive care solutions tailored to your pet's needs",
-      "grooming": {
-        "title": "Grooming",
-        "description": "Professional grooming services to keep your pet looking and feeling their best."
-      },
-      "boarding": {
-        "title": "Boarding",
-        "description": "Safe and comfortable boarding services while you're away."
-      },
-      "walking": {
-        "title": "Walking",
-        "description": "Regular walks to keep your pet active and healthy."
+    "highlights": {
+      "title": "Instagram Highlights",
+      "viewAll": "VIEW ALL",
+      "dailyCare": "Daily Care",
+      "training": "Training",
+      "restTime": "Rest Time",
+      "nutrition": "Nutrition",
+      "grooming": "Grooming",
+      "deliveries": "Deliveries",
+      "followers": "Join our family of 50k+ followers",
+      "follow": "Follow @ElitePaws"
+    },
+    "health": {
+      "badge": "Trust & Transparency",
+      "title": "Health Certifications",
+      "subtitle": "Our commitment to excellence extends beyond aesthetics. We adhere to the highest veterinary standards to ensure your companion arrives with a foundation of lifelong wellness.",
+      "seal": "Quality Seal",
+      "certified": "100% Certified",
+      "verified": "Verified by Global Breed Standards",
+      "pedigree": {
+        "title": "Pedigree Documents",
+        "description": "Comprehensive ancestral records documenting champion bloodlines and genetic heritage. Each certificate provides indisputable proof of your puppy's noble lineage and standard."
       },
       "veterinary": {
-        "title": "Veterinary",
-        "description": "Expert veterinary care to ensure your pet's health and wellbeing."
+        "title": "Veterinary Exams",
+        "description": "Rigorous clinical evaluations performed by board-certified specialists. We conduct thorough screenings for heart, hip, and eye health to guarantee a robust physical foundation."
+      },
+      "vaccination": {
+        "title": "Vaccination Records",
+        "description": "Precise, timestamped immunization logs reflecting a complete preventative care schedule. Every puppy is protected against essential pathogens before joining their new family."
       }
     },
-    "about": {
-      "title": "Caring for Your Pets Like Our Own",
-      "text1": "At Elite Paws, we understand that your pet is part of your family. That's why we dedicate ourselves to providing the highest quality care with love and attention they deserve.",
-      "text2": "Our team of certified professionals has years of experience in pet care, ensuring your furry friend receives the best treatment in a safe and nurturing environment.",
-      "contact": "Contact Us"
+    "pups": {
+      "title": "Featured Pups",
+      "subtitle": "Hand-picked selections from our latest champion-line litters. Each puppy comes with full health certifications.",
+      "badges": {
+        "new": "New",
+        "reserved": "Reserved",
+        "popular": "Popular"
+      },
+      "viewDetails": "View Details",
+      "notAvailable": "Not Available"
     },
     "testimonials": {
-      "title": "What Pet Parents Say",
-      "subtitle": "Don't just take our word for it - hear from our happy clients"
-    },
-    "cta": {
-      "title": "Ready to Give Your Pet the Best Care?",
-      "subtitle": "Book an appointment today and let us pamper your furry friend",
-      "button": "Book Now"
+      "title": "Happy Families",
+      "subtitle": "Join the Elite Paws family. Here is what some of our premium clients have to say about their new companions."
     },
     "footer": {
-      "description": "Premium pet care services for your furry friends.",
+      "description": "Redefining the standard of dog breeding through a dedication to excellence, health, and a lifelong commitment to our animals.",
       "quickLinks": "Quick Links",
-      "followUs": "Follow Us",
-      "copyright": "All rights reserved."
+      "links": {
+        "puppies": "Available Puppies",
+        "gallery": "Sire & Dam Gallery",
+        "process": "Breeding Process",
+        "policy": "Adoption Policy"
+      },
+      "resources": "Resources",
+      "resourcesList": {
+        "health": "Health Guarantees",
+        "guide": "Puppy Care Guide",
+        "nutrition": "Nutrition Plans",
+        "vet": "Vet Recommendations"
+      },
+      "newsletter": "Newsletter",
+      "newsletterText": "Get notified about new litters and elite breeding news.",
+      "emailPlaceholder": "Your Email",
+      "subscribe": "Subscribe",
+      "copyright": "All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy"
     }
   },
   "es": {
     "nav": {
-      "home": "Inicio",
-      "about": "Nosotros",
-      "services": "Servicios",
-      "contact": "Contacto"
+      "available": "Cachorros Disponibles",
+      "story": "Nuestra Historia",
+      "process": "Proceso",
+      "testimonials": "Testimonios"
     },
     "header": {
-      "bookNow": "Reservar Ahora"
+      "inquire": "CONSULTAR AHORA"
     },
     "hero": {
-      "title": "Cuidado Premium para Tu Mejor Amigo Peludo",
-      "subtitle": "Donde el comfort y la felicidad de tu mascota son nuestra prioridad",
-      "getStarted": "Comenzar",
-      "learnMore": "Saber Más"
+      "badge": "Cría Elite",
+      "title": "Descubre Tu",
+      "titleHighlight": "Compañero Perfecto",
+      "subtitle": "Genética premium para familias exigentes. Experimenta el estándar de oro de la excelencia canina.",
+      "ctaPrimary": "Cachorros Disponibles",
+      "ctaSecondary": "Conoce a los Padres",
+      "chat": "Habla con un Criador"
     },
-    "features": {
-      "title": "Nuestros Servicios",
-      "subtitle": "Soluciones de cuidado integrales adaptadas a las necesidades de tu mascota",
-      "grooming": {
-        "title": "Peluquería",
-        "description": "Servicios profesionales de peluquería para que tu mascota luzca y se sienta increíble."
-      },
-      "boarding": {
-        "title": "Alojamiento",
-        "description": "Servicios de hospedaje seguros y cómodos mientras estás fuera."
-      },
-      "walking": {
-        "title": "Paseos",
-        "description": "Paseos regulares para mantener a tu mascota activa y saludable."
+    "highlights": {
+      "title": "Highlights de Instagram",
+      "viewAll": "VER TODO",
+      "dailyCare": "Cuidado Diario",
+      "training": "Entrenamiento",
+      "restTime": "Tiempo de Descanso",
+      "nutrition": "Nutrición",
+      "grooming": "Peluquería",
+      "deliveries": "Entregas",
+      "followers": "Únete a nuestra familia de más de 50k seguidores",
+      "follow": "Seguir @ElitePaws"
+    },
+    "health": {
+      "badge": "Confianza y Transparencia",
+      "title": "Certificaciones de Salud",
+      "subtitle": "Nuestro compromiso con la excelencia va más allá de la estética. Adherimos a los más altos estándares veterinarios para asegurar que tu compañero llegue con una base de bienestar de por vida.",
+      "seal": "Sello de Calidad",
+      "certified": "100% Certificado",
+      "verified": "Verificado por Estándares Mundiales de Raza",
+      "pedigree": {
+        "title": "Documentos de Pedigree",
+        "description": "Registros ancestrales completos que documentan líneas de sangre campeón y herencia genética. Cada certificado proporciona prueba indiscutible del noble linaje de tu cachorro."
       },
       "veterinary": {
-        "title": "Veterinario",
-        "description": "Cuidado veterinario experto para asegurar la salud y bienestar de tu mascota."
+        "title": "Exámenes Veterinarios",
+        "description": "Evaluaciones clínicas rigurosas realizadas por especialistas certificados. Realizamos controles exhaustivos de salud cardíaca, de cadera y ocular para garantizar una base física sólida."
+      },
+      "vaccination": {
+        "title": "Registros de Vacunación",
+        "description": "Registros de inmunización precisos y con fecha que reflejan un programa completo de cuidado preventivo. Cada cachorro está protegido contra patógenos esenciales antes de unirse a su nueva familia."
       }
     },
-    "about": {
-      "title": "Cuidando a Tu Mascota Como Propia",
-      "text1": "En Elite Paws, entendemos que tu mascota es parte de tu familia. Por eso nos dedicamos a proporcionar la más alta calidad de cuidado con amor y atención que merecen.",
-      "text2": "Nuestro equipo de profesionales certificados tiene años de experiencia en el cuidado de mascotas, asegurando que tu amigo peludo reciba el mejor tratamiento en un entorno seguro y enriquecedor.",
-      "contact": "Contáctanos"
+    "pups": {
+      "title": "Cachorros Destacados",
+      "subtitl": "Selecciones seleccionadas de nuestras últimas camadas de líneas campeón. Cada cachorro viene con certificaciones de salud completas.",
+      "badges": {
+        "new": "Nuevo",
+        "reserved": "Reservado",
+        "popular": "Popular"
+      },
+      "viewDetails": "Ver Detalles",
+      "notAvailable": "No Disponible"
     },
     "testimonials": {
-      "title": "Lo que Dicen los Dueños de Mascotas",
-      "subtitle": "No solo tomes nuestra palabra - escucha a nuestros clientes felices"
-    },
-    "cta": {
-      "title": "¿Listo para Darle a Tu Mascota el Mejor Cuidado?",
-      "subtitle": "Reserva una cita hoy y deja que mimemos a tu amigo peludo",
-      "button": "Reservar Ahora"
+      "title": "Familias Felices",
+      "subtitle": "Únete a la familia Elite Paws. Esto es lo que algunos de nuestros clientes premium dicen sobre sus nuevos compañeros."
     },
     "footer": {
-      "description": "Servicios premium de cuidado para tus mejores amigos peludos.",
+      "description": "Redefiniendo el estándar de cría de perros a través de una dedicación a la excelencia, la salud y un compromiso de por vida con nuestros animales.",
       "quickLinks": "Enlaces Rápidos",
-      "followUs": "Síguenos",
-      "copyright": "Todos los derechos reservados."
+      "links": {
+        "puppies": "Cachorros Disponibles",
+        "gallery": "Galería de Padres",
+        "process": "Proceso de Cría",
+        "policy": "Política de Adopción"
+      },
+      "resources": "Recursos",
+      "resourcesList": {
+        "health": "Garantías de Salud",
+        "guide": "Guía de Cuidado",
+        "nutrition": "Planes de Nutrición",
+        "vet": "Recomendaciones Veterinarias"
+      },
+      "newsletter": "Boletín",
+      "newsletterText": "Recibe notificaciones sobre nuevas camadas y noticias de cría elite.",
+      "emailPlaceholder": "Tu Email",
+      "subscribe": "Suscribirse",
+      "copyright": "Todos los derechos reservados.",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "cookies": "Política de Cookies"
     }
   }
 }

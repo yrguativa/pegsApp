@@ -1,0 +1,49 @@
+---
+interface Props {
+  t: {
+    (key: string): string;
+  };
+}
+
+const { t } = Astro.props;
+
+const highlights = [
+  { image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCpAhVoX2p83E0uscneVNl7QtGt7iGIgd45svc5LNdweT73mcHSVO16GBGfEwnNi3BLnigEY8Gfu2ERfa6dwzcBIcFobRzuEU0_89NpzUPU6_vex3_kQcJJJq8FGXmnC2i0fqD1No7tPA1OAOnk0DM2jdZ4G9grO5H1MwNJOG2EZkdS_o6cdHy-0SDev__4cdnaY9ngmsyAfDkeFU5bJPulHpIMcR5uxQOAqki4BnkiFs1iBXDdAWInYKbRELwrQyBeUwIspgSP8-ty", label: "dailyCare" },
+  { image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCWEwVGMHj235s5WFSozweZokvgSenY7X2lvbZlLplOVbTGXjb3zvYLhYmEaS5_lMwZS0eeEmNBxNuR_bDQzTwfoH296kHBFyWGJRxIH0s5m7FnCdM2lKgJzB8o-j3sakWPByvoYY8qiAgFNWbDupRCeNcBtNyONmVT29QLrUtHr770MmheGPWVQzf9Hr6Ji2G0YjbF_-5FoRcFRgQUPT0BlK-7Orzsu2iz5Wmz6Ch33K7Mcc_-5aeipcEvwcezobXvje7aqGrW8j04", label: "training" },
+  { image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB4cwbDBJDw-g468Uvd4XJwQ0w2I4_xwJnitiQ-8zSOEVSJkS_vUM_sqkqlVQ6V9cQfYFTRgl7jnC1NLm8TnE8TXEBso736jsI5-HhjMPa1UPvE6bv6GXd9gr_Bh30Y4Y5sF6fSLdh-Nfkc63pEQDNFg5IX7pSAUpn1LhgAFIGqTlwDuDhQnHdWaRyBz-llJbHxOyoyib0KUfSBoDuMN8rdhb-pnV7QLOz5NnNrsiGXFL_a5JJyRoLUMHsGgxgxF4S3M2zvkmQXFbiS", label: "restTime" },
+  { image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA7M6xK-B3ssS__0jS5JG0GeIxagPJIKo4dHGKgQKx_xAaKrkCKk73IcPsWYayg160H7UT9hawB0GHfd_X9UHziKXI7LmJv5R-9qWVOM3iYRwLSRGlwDX26OjkLPU2bHepmTqlytVRdqVug6QWoXgU0nt_H1taDeoBeC2iuqQVcpYPSqPYetEElehXT7blNrP-FL1eTPSyxTci1rg9FKj0wkBJLP-GNRvq10TSTBbxwhYrOwyCRNCMkV3xox8IOPE6BIgo6gvmi6X7B", label: "nutrition" },
+  { image: "https://lh3.googleusercontent.com/aida-public/AB6AXuA9jFSqKcM3M97ajEpsL7TmHH48aZ5Hq1zA_-_SYU-iNljzh5nfQNV1aq0iQpCrSB-XuGi2-2y_3V7GLoQn6i32e_gEq2tvJ24MhPq8r34dRRw1b9gmtChohl3ng3ay9risTbgrkxJjHygV0Cja1BdgknPSDtV_-yFSLcWdRf4WZPyjgfBMl_oimw3PbBP3ajG_WWX9V_ODB1CMW2Y8N2K4AR_9i2NhzejFwiqbPrEgs6f39xd9U_nQH41loLgWi-tYCM3Ad8JjGaS-", label: "grooming" },
+  { image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB--9BcnNjud24mbY3Ob7s_xbPaKmY1kl-YBnbEftapxy14LHGgUN4NZIVt_9y1udaL72WcodgOmQu0A1MCs94OkOBGwP3SWl2cJ1vHmTeHyBoX8EQ6qgsUOZIbJjFm9qjthtsJFNgQYU6L9W3RxO1ixlab8Of6ZBZB5jlNSoJ3coCXzwzpUEFkWP39ej74T5QC5BJRsPGxxDLytkiM8uQsIU300RZ7v7qQLTrq7TLoji8LqwoTNacSgadDb3JfDiNJAiwbYvuQUPKa", label: "deliveries" },
+];
+---
+
+<section class="py-24 bg-forest-dark overflow-hidden">
+  <div class="px-6 lg:px-20 mb-12 flex flex-col md:flex-row md:items-center justify-between gap-6">
+    <div class="flex items-center gap-4">
+      <span class="material-symbols-outlined text-primary text-4xl">photo_camera</span>
+      <h2 class="text-3xl md:text-4xl font-black text-white uppercase tracking-tight">{t('highlights.title')}</h2>
+    </div>
+    <a class="text-primary font-bold flex items-center gap-2 hover:translate-x-1 transition-transform group" href="#">
+      {t('highlights.viewAll')} <span class="material-symbols-outlined text-xl group-hover:ml-1 transition-all">arrow_forward</span>
+    </a>
+  </div>
+  <div class="flex gap-6 overflow-x-auto pb-10 px-6 lg:px-20 no-scrollbar">
+    {highlights.map((item) => (
+      <div class="flex-none w-44 md:w-56 group cursor-pointer">
+        <div class="relative aspect-[9/16] rounded-3xl overflow-hidden border-2 border-primary/20 hover:border-primary p-1.5 transition-all duration-500">
+          <div class="w-full h-full rounded-2xl overflow-hidden relative">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src={item.image} alt={t(`highlights.${item.label}`)} />
+            <div class="absolute inset-0 bg-gradient-to-t from-forest-dark/80 via-transparent to-transparent"></div>
+            <span class="absolute bottom-4 left-4 text-white text-xs font-black tracking-widest uppercase">{t(`highlights.${item.label}`)}</span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+  <div class="text-center mt-8">
+    <p class="text-slate-400 text-sm italic">{t('highlights.followers')}</p>
+    <button class="mt-6 inline-flex items-center gap-3 px-10 py-4 rounded-full border border-primary/30 text-white font-black text-sm tracking-widest hover:bg-primary/10 transition-all uppercase">
+      {t('highlights.follow')}
+    </button>
+  </div>
+</section>
