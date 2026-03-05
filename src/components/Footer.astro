@@ -10,7 +10,7 @@ const { t, lang } = Astro.props;
 const base = '/pegsApp';
 ---
 
-<footer class="bg-forest-dark border-t border-white/5 py-24">
+<footer class="bg-forest-dark border-t border-white/5 py-24 pb-32">
   <div class="max-w-7xl mx-auto px-6">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
       <div class="col-span-1">
@@ -69,3 +69,29 @@ const base = '/pegsApp';
     </div>
   </div>
 </footer>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-forest-dark/95 backdrop-blur-lg border-t border-white/10 px-2 py-2">
+  <div class="flex justify-around items-center">
+    <a href={`${base}/${lang}#hero`} class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-primary transition-colors">
+      <span class="material-symbols-outlined text-2xl">home</span>
+      <span class="text-[10px] font-medium">{t('mobileNav.home')}</span>
+    </a>
+    <a href={`${base}/${lang}#puppies`} class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-primary transition-colors">
+      <span class="material-symbols-outlined text-2xl">pets</span>
+      <span class="text-[10px] font-medium">{t('mobileNav.puppies')}</span>
+    </a>
+    <a href={`${base}/${lang}/care`} class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-primary transition-colors">
+      <span class="material-symbols-outlined text-2xl">medical_services</span>
+      <span class="text-[10px] font-medium">{t('mobileNav.care')}</span>
+    </a>
+    <a href={`${base}/${lang}/about`} class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-primary transition-colors">
+      <span class="material-symbols-outlined text-2xl">info</span>
+      <span class="text-[10px] font-medium">{t('mobileNav.about')}</span>
+    </a>
+    <a href="#process" class="flex flex-col items-center gap-1 p-2 text-slate-400 hover:text-primary transition-colors">
+      <span class="material-symbols-outlined text-2xl">chat</span>
+      <span class="text-[10px] font-medium">{t('mobileNav.process')}</span>
+    </a>
+  </div>
+</nav>
