@@ -1,0 +1,272 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { useTranslations } from '../../../i18n/utils';
+import data from '../../../../public/data.json';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es', id: 'cooper' } },
+    { params: { lang: 'es', id: 'luna' } },
+    { params: { lang: 'es', id: 'oliver' } },
+  ];
+}
+
+const { id } = Astro.params;
+const lang = 'es';
+const t = useTranslations(lang);
+const base = '/pegsApp';
+
+const puppy = data.puppies.find((p: { id: string }) => p.id === id);
+
+if (!puppy) {
+  throw new Error(`Puppy not found: ${id}`);
+}
+
+const breed = lang === 'es' ? puppy.breed_es : puppy.breed;
+const age = lang === 'es' ? puppy.age_es : puppy.age;
+const gender = lang === 'es' ? puppy.gender_es : puppy.gender;
+const color = lang === 'es' ? puppy.color_es : puppy.color;
+const description = lang === 'es' ? puppy.description_es : puppy.description;
+const sireName = puppy.parents?.sire?.name || '';
+const damName = puppy.parents?.dam?.name || '';
+const sireTitle = puppy.parents?.sire?.title || '';
+const damTitle = puppy.parents?.dam?.title || '';
+const sireDesc = puppy.parents?.sire?.description || '';
+const damDesc = puppy.parents?.dam?.description || '';
+const sireImage = puppy.parents?.sire?.image || puppy.image;
+const damImage = puppy.parents?.dam?.image || puppy.image;
+
+const galleryImages = puppy.images && puppy.images.length > 0 ? puppy.images : [puppy.image];
+
+const availableLabel = puppy.available !== false ? t('petDetails.available') : t('petDetails.reserved');
+---
+
+<Layout title={`${puppy.name} - ${breed} | Elite Paws`} lang={lang}>
+  <!-- DEBUG: lang = {lang} -->
+  <Header t={t} lang={lang} />
+  
+  <main class="pt-32 pb-20 bg-forest-dark min-h-screen">
+    <div class="max-w-7xl mx-auto px-6 lg:px-20">
+      <!-- Breadcrumbs -->
+      <nav class="flex items-center gap-2 mb-8 text-sm text-slate-400">
+        <a class="hover:text-primary transition-colors" href={`${base}/${lang}`}>{t('petDetails.breadcrumbHome')}</a>
+        <span class="material-symbols-outlined text-xs">chevron_right</span>
+        <a class="hover:text-primary transition-colors" href={`${base}/${lang}#puppies`}>{t('petDetails.breadcrumbPuppies')}</a>
+        <span class="material-symbols-outlined text-xs">chevron_right</span>
+        <span class="text-primary font-medium">{puppy.name} - {color}</span>
+      </nav>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Left: Image Gallery -->
+        <div class="lg:col-span-7 flex flex-col gap-4">
+          <div class="relative aspect-square w-full rounded-xl overflow-hidden bg-forest-card border border-white/5 group">
+            <div 
+              class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+              data-alt={puppy.name}
+              style={`background-image: url('${galleryImages[0]}')`}
+            >
+            </div>
+            {puppy.available !== false && (
+              <div class="absolute top-4 left-4 bg-primary text-forest-dark px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest">
+                {availableLabel}
+              </div>
+            )}
+          </div>
+          
+          {galleryImages.length > 1 && (
+            <div class="grid grid-cols-4 gap-4">
+              {galleryImages.slice(0, 4).map((img: string, index: number) => (
+                <div class={`aspect-square rounded-lg overflow-hidden cursor-pointer border-2 ${index === 0 ? 'border-primary' : 'border-white/10 hover:border-primary/50'} transition-colors`}>
+                  <div 
+                    class="w-full h-full bg-cover bg-center" 
+                    data-alt={`${puppy.name} ${index + 1}`}
+                    style={`background-image: url('${img}')`}
+                  >
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        <!-- Right: Details -->
+        <div class="lg:col-span-5 flex flex-col gap-8">
+          <div>
+            <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-2">Elite {breed}</h2>
+            <h1 class="text-5xl font-black text-white mb-2">{puppy.name}</h1>
+            <p class="text-3xl font-light text-primary/90">{puppy.price}</p>
+          </div>
+
+          <!-- Characteristics -->
+          <div class="grid grid-cols-3 gap-4 border-y border-white/5 py-6">
+            <div class="flex flex-col gap-1">
+              <span class="text-slate-500 text-xs uppercase font-bold tracking-tighter">{t('petDetails.age')}</span>
+              <span class="text-white font-medium">{age}</span>
+            </div>
+            <div class="flex flex-col gap-1 border-x border-white/5 px-4">
+              <span class="text-slate-500 text-xs uppercase font-bold tracking-tighter">{t('petDetails.color')}</span>
+              <span class="text-white font-medium">{color}</span>
+            </div>
+            <div class="flex flex-col gap-1 pl-4">
+              <span class="text-slate-500 text-xs uppercase font-bold tracking-tighter">{t('petDetails.gender')}</span>
+              <span class="text-white font-medium">{gender}</span>
+            </div>
+          </div>
+
+          <!-- Description -->
+          {description && (
+            <div class="text-slate-300 leading-relaxed">
+              {description}
+            </div>
+          )}
+
+          <!-- Health Certifications -->
+          {puppy.health && (
+            <div class="flex flex-col gap-4">
+              <h3 class="text-white font-bold text-lg flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary">verified_user</span>
+                {t('petDetails.healthTitle')}
+              </h3>
+              <div class="grid grid-cols-2 gap-3">
+                {puppy.health.vaccinations && (
+                  <div class="flex items-center gap-3 p-3 rounded-xl bg-forest-card border border-white/5">
+                    <span class="material-symbols-outlined text-primary">vaccines</span>
+                    <span class="text-sm font-medium text-slate-300">{t('petDetails.vaccinations')}</span>
+                  </div>
+                )}
+                {puppy.health.registered && (
+                  <div class="flex items-center gap-3 p-3 rounded-xl bg-forest-card border border-white/5">
+                    <span class="material-symbols-outlined text-primary">description</span>
+                    <span class="text-sm font-medium text-slate-300">{t('petDetails.registered')}</span>
+                  </div>
+                )}
+                {puppy.health.microchipped && (
+                  <div class="flex items-center gap-3 p-3 rounded-xl bg-forest-card border border-white/5">
+                    <span class="material-symbols-outlined text-primary">medical_services</span>
+                    <span class="text-sm font-medium text-slate-300">{t('petDetails.microchipped')}</span>
+                  </div>
+                )}
+                {puppy.health.healthGuarantee && (
+                  <div class="flex items-center gap-3 p-3 rounded-xl bg-forest-card border border-white/5">
+                    <span class="material-symbols-outlined text-primary">favorite</span>
+                    <span class="text-sm font-medium text-slate-300">{t('petDetails.healthGuarantee')}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          <!-- Actions -->
+          {puppy.available !== false && (
+            <div class="flex flex-col gap-3 pt-4">
+              <button class="w-full flex items-center justify-center gap-3 bg-forest-card border-2 border-primary text-primary hover:bg-primary/10 transition-colors py-4 rounded-xl font-bold uppercase tracking-widest text-sm">
+                <span class="material-symbols-outlined">videocam</span>
+                {t('petDetails.requestVideo')}
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <!-- Parents Section -->
+      {puppy.parents && (
+        <section class="mt-20">
+          <div class="flex items-end justify-between mb-8">
+            <div>
+              <h2 class="text-3xl font-black text-white">{t('petDetails.parentsTitle')}</h2>
+              <p class="text-slate-500">{t('petDetails.parentsSubtitle')}</p>
+            </div>
+            <div class="h-[1px] flex-1 bg-white/5 mx-8 mb-3 hidden md:block"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Father Card -->
+            <div class="group relative overflow-hidden rounded-2xl bg-forest-card border border-white/5">
+              <div class="aspect-[16/9] w-full overflow-hidden">
+                <div 
+                  class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" 
+                  data-alt={sireName}
+                  style={`background-image: url('${sireImage}')`}
+                >
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <h4 class="text-xl font-bold text-white">{t('petDetails.sire')}: {sireName}</h4>
+                  {sireTitle && (
+                    <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-black uppercase rounded">{sireTitle}</span>
+                  )}
+                </div>
+                <p class="text-slate-400 text-sm">{sireDesc}</p>
+              </div>
+            </div>
+            <!-- Mother Card -->
+            <div class="group relative overflow-hidden rounded-2xl bg-forest-card border border-white/5">
+              <div class="aspect-[16/9] w-full overflow-hidden">
+                <div 
+                  class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" 
+                  data-alt={damName}
+                  style={`background-image: url('${damImage}')`}
+                >
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <h4 class="text-xl font-bold text-white">{t('petDetails.dam')}: {damName}</h4>
+                  {damTitle && (
+                    <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-black uppercase rounded">{damTitle}</span>
+                  )}
+                </div>
+                <p class="text-slate-400 text-sm">{damDesc}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      <!-- Back Link -->
+      <div class="mt-12">
+        <a href={`${base}/${lang}#puppies`} class="inline-flex items-center gap-2 text-primary hover:underline">
+          <span class="material-symbols-outlined text-sm">arrow_back</span>
+          {t('petDetails.backToPuppies')}
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sticky Footer CTA -->
+  {puppy.available !== false && (
+    <footer class="fixed bottom-0 left-0 right-0 z-[60] p-4 lg:p-6 bg-forest-dark/95 backdrop-blur-xl border-t border-white/5 shadow-2xl">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="hidden md:flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full overflow-hidden border border-white/10">
+            <div 
+              class="w-full h-full bg-cover bg-center" 
+              data-alt={puppy.name}
+              style={`background-image: url('${puppy.image}')`}
+            >
+            </div>
+          </div>
+          <div>
+            <p class="text-white font-bold leading-none">{t('petDetails.adopt')} {puppy.name}</p>
+            <p class="text-primary text-sm font-medium">{puppy.price} {t('petDetails.fullRights')}</p>
+          </div>
+        </div>
+        <div class="flex w-full sm:w-auto gap-3">
+          <button class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-8 py-4 bg-primary text-forest-dark rounded-xl font-black uppercase tracking-widest text-sm hover:scale-105 active:scale-95 transition-all shadow-[0_0_20px_rgba(30,215,96,0.3)]">
+            <span class="material-symbols-outlined font-bold">chat</span>
+            {t('petDetails.inquireWhatsapp')}
+          </button>
+          <button class="flex-1 sm:flex-none flex items-center justify-center gap-2 px-8 py-4 bg-forest-card border border-white/10 text-white rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white/10 transition-all">
+            <span class="material-symbols-outlined">event_available</span>
+            {t('petDetails.bookVisit')}
+          </button>
+        </div>
+      </div>
+    </footer>
+  )}
+  <div class="h-32"></div>
+  
+  <Footer t={t} lang={lang as 'en' | 'es'} />
+</Layout>
