@@ -6,12 +6,44 @@
       "breed": "Golden Retriever",
       "breed_es": "Golden Retriever",
       "price": "$2,400",
+      "priceValue": 2400,
       "age": "10 Weeks",
       "age_es": "10 Semanas",
       "gender": "Male",
       "gender_es": "Macho",
+      "color": "Golden",
+      "color_es": "Dorado",
       "badge": "new",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBhD6ukIOYKh95DpeYw2v5qg29QiJy3mhrL2SCafhG67gLBD4sbRV1O-F17DVmbtqNPwxz-YqP8-d2LPz3fFmy6Ridna5IjsxSpikyWoqyvndtLLVErUjR0jl2brj4ybsN_CI_r3w7lS6TegW3CikD_Qox5bQIA3FeGHEUs4na3ojbweRZDj8JTjovVbGv-QB7JAAIKKRHCX0WmFf6m8ERRNQRmoxRI0oqyx5cD4GLp-12ZMY3BH7oH6nlUwTrAH0YVj15LVCGGO6lP"
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuBhD6ukIOYKh95DpeYw2v5qg29QiJy3mhrL2SCafhG67gLBD4sbRV1O-F17DVmbtqNPwxz-YqP8-d2LPz3fFmy6Ridna5IjsxSpikyWoqyvndtLLVErUjR0jl2brj4ybsN_CI_r3w7lS6TegW3CikD_Qox5bQIA3FeGHEUs4na3ojbweRZDj8JTjovVbGv-QB7JAAIKKRHCX0WmFf6m8ERRNQRmoxRI0oqyx5cD4GLp-12ZMY3BH7oH6nlUwTrAH0YVj15LVCGGO6lP",
+      "images": [
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuBhD6ukIOYKh95DpeYw2v5qg29QiJy3mhrL2SCafhG67gLBD4sbRV1O-F17DVmbtqNPwxz-YqP8-d2LPz3fFmy6Ridna5IjsxSpikyWoqyvndtLLVErUjR0jl2brj4ybsN_CI_r3w7lS6TegW3CikD_Qox5bQIA3FeGHEUs4na3ojbweRZDj8JTjovVbGv-QB7JAAIKKRHCX0WmFf6m8ERRNQRmoxRI0oqyx5cD4GLp-12ZMY3BH7oH6nlUwTrAH0YVj15LVCGGO6lP",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuBhD6ukIOYKh95DpeYw2v5qg29QiJy3mhrL2SCafhG67gLBD4sbRV1O-F17DVmbtqNPwxz-YqP8-d2LPz3fFmy6Ridna5IjsxSpikyWoqyvndtLLVErUjR0jl2brj4ybsN_CI_r3w7lS6TegW3CikD_Qox5bQIA3FeGHEUs4na3ojbweRZDj8JTjovVbGv-QB7JAAIKKRHCX0WmFf6m8ERRNQRmoxRI0oqyx5cD4GLp-12ZMY3BH7oH6nlUwTrAH0YVj15LVCGGO6lP",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuBhD6ukIOYKh95DpeYw2v5qg29QiJy3mhrL2SCafhG67gLBD4sbRV1O-F17DVmbtqNPwxz-YqP8-d2LPz3fFmy6Ridna5IjsxSpikyWoqyvndtLLVErUjR0jl2brj4ybsN_CI_r3w7lS6TegW3CikD_Qox5bQIA3FeGHEUs4na3ojbweRZDj8JTjovVbGv-QB7JAAIKKRHCX0WmFf6m8ERRNQRmoxRI0oqyx5cD4GLp-12ZMY3BH7oH6nlUwTrAH0YVj15LVCGGO6lP",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuBhD6ukIOYKh95DpeYw2v5qg29QiJy3mhrL2SCafhG67gLBD4sbRV1O-F17DVmbtqNPwxz-YqP8-d2LPz3fFmy6Ridna5IjsxSpikyWoqyvndtLLVErUjR0jl2brj4ybsN_CI_r3w7lS6TegW3CikD_Qox5bQIA3FeGHEUs4na3ojbweRZDj8JTjovVbGv-QB7JAAIKKRHCX0WmFf6m8ERRNQRmoxRI0oqyx5cD4GLp-12ZMY3BH7oH6nlUwTrAH0YVj15LVCGGO6lP",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuBhD6ukIOYKh95DpeYw2v5qg29QiJy3mhrL2SCafhG67gLBD4sbRV1O-F17DVmbtqNPwxz-YqP8-d2LPz3fFmy6Ridna5IjsxSpikyWoqyvndtLLVErUjR0jl2brj4ybsN_CI_r3w7lS6TegW3CikD_Qox5bQIA3FeGHEUs4na3ojbweRZDj8JTjovVbGv-QB7JAAIKKRHCX0WmFf6m8ERRNQRmoxRI0oqyx5cD4GLp-12ZMY3BH7oH6nlUwTrAH0YVj15LVCGGO6lP"
+      ],
+      "description": "Cooper is a magnificent Golden Retriever puppy with an incredible temperament. He has been raised in our home with children and other pets, ensuring excellent socialization. Perfect structure and a playful spirit.",
+      "description_es": "Cooper es un magnificent cachorro Golden Retriever con un temperamento increíble. Ha sido criado en nuestro hogar con niños y otras mascotas, asegurando una excelente socialización. Estructura perfecta y un espíritu juguetón.",
+      "health": {
+        "vaccinations": true,
+        "registered": true,
+        "microchipped": true,
+        "healthGuarantee": true
+      },
+      "parents": {
+        "sire": {
+          "name": "Max",
+          "title": "Champion Line",
+          "description": "Golden Tan. AKC Grand Champion bloodline.",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDp7RZlmseaAvpFGl9RzLNR4pG-TOto0CXXpfYtQsqePWKmaOkeovOrZOf4MUgFvDqZCYv_b1wm3S5mRCEKiFacNYoVswt2cjU4sggleeh0NY5O9IxIqDlMmKEDvSNI219zDVCjhd0_2hmn1vBPhKEV9ozlOuhpQaYrYxdTIg26aGF3WQUIdAN1cyd9J_SU_odUSVQElU9CoBaVVrpxUnUX9qx2PKqaXCalk8cjMpTjNUBhwi8TOI8gOD805oxrB9lhJWUQA1GOzMnZ"
+        },
+        "dam": {
+          "name": "Bella",
+          "title": "Health Tested",
+          "description": "Light Golden, Excellent Structure. Clear DNA panels.",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAkdIAx_2kwjvOccRQH-lbeVDw271AwZ2mHXjwn4ghf4ZeZ2xhdmdHBV_TJ9jSBm6eFqN2JhaXQWoA-RjOcf-kIhI13EXK39g79uhitjqEfDJRtO-5BrqVvIH1ITwlmHUcJIT43M3jcTgwh909ovhVBLEL7TGizd5weSV7ze8P8t03pN1UN5euAy66hzkn-5HbVwpUrg5L1d4m3MfKT7vrcY0Zln8aHlY5F6Sw4LRtg1YpwXWHsYXZOfkTf6KoIqvC_9QivVcH0y63_"
+        }
+      }
     },
     {
       "id": "luna",
@@ -19,13 +51,41 @@
       "breed": "Golden Retriever",
       "breed_es": "Golden Retriever",
       "price": "$2,800",
+      "priceValue": 2800,
       "age": "12 Weeks",
       "age_es": "12 Semanas",
       "gender": "Female",
       "gender_es": "Hembra",
+      "color": "Cream",
+      "color_es": "Crema",
       "badge": "reserved",
       "available": false,
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDP7j0oHmaAtcxrRetC2Bhy4b4for8ahJOy-ccvBc_WiD64_qABR9VdRsA-8VVSCMJ4ZYzI-buypbgfXoqaHS7m8_p1jMgm8867wePeG-Aqp7-HSd220UijFhKi8gaQKka6pwKX9ROMgUhuFYYb7ynbydsSpUQelT0uHA0ak8XyG8d3acigEbX1PitKxNUr_N9iPmIKOrmnGFc_MhZsDBldhjgHCh9AX_oOe7N2P4NUCgzWejJI9csvfazU_KcMgvm0PejZfFz0Ntk5"
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDP7j0oHmaAtcxrRetC2Bhy4b4for8ahJOy-ccvBc_WiD64_qABR9VdRsA-8VVSCMJ4ZYzI-buypbgfXoqaHS7m8_p1jMgm8867wePeG-Aqp7-HSd220UijFhKi8gaQKka6pwKX9ROMgUhuFYYb7ynbydsSpUQelT0uHA0ak8XyG8d3acigEbX1PitKxNUr_N9iPmIKOrmnGFc_MhZsDBldhjgHCh9AX_oOe7N2P4NUCgzWejJI9csvfazU_KcMgvm0PejZfFz0Ntk5",
+      "images": [
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuDP7j0oHmaAtcxrRetC2Bhy4b4for8ahJOy-ccvBc_WiD64_qABR9VdRsA-8VVSCMJ4ZYzI-buypbgfXoqaHS7m8_p1jMgm8867wePeG-Aqp7-HSd220UijFhKi8gaQKka6pwKX9ROMgUhuFYYb7ynbydsSpUQelT0uHA0ak8XyG8d3acigEbX1PitKxNUr_N9iPmIKOrmnGFc_MhZsDBldhjgHCh9AX_oOe7N2P4NUCgzWejJI9csvfazU_KcMgvm0PejZfFz0Ntk5"
+      ],
+      "description": "Luna is a stunning Cream female with a gentle and affectionate nature. She has been raised with premium care and early socialization.",
+      "description_es": "Luna es una hermosa hembra crema con una naturaleza gentil y afectuosa. Ha sido criada con cuidado premium y socialización temprana.",
+      "health": {
+        "vaccinations": true,
+        "registered": true,
+        "microchipped": true,
+        "healthGuarantee": true
+      },
+      "parents": {
+        "sire": {
+          "name": "Max",
+          "title": "Champion Line",
+          "description": "Golden Tan. AKC Grand Champion bloodline.",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDp7RZlmseaAvpFGl9RzLNR4pG-TOto0CXXpfYtQsqePWKmaOkeovOrZOf4MUgFvDqZCYv_b1wm3S5mRCEKiFacNYoVswt2cjU4sggleeh0NY5O9IxIqDlMmKEDvSNI219zDVCjhd0_2hmn1vBPhKEV9ozlOuhpQaYrYxdTIg26aGF3WQUIdAN1cyd9J_SU_odUSVQElU9CoBaVVrpxUnUX9qx2PKqaXCalk8cjMpTjNUBhwi8TOI8gOD805oxrB9lhJWUQA1GOzMnZ"
+        },
+        "dam": {
+          "name": "Bella",
+          "title": "Health Tested",
+          "description": "Light Golden, Excellent Structure. Clear DNA panels.",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAkdIAx_2kwjvOccRQH-lbeVDw271AwZ2mHXjwn4ghf4ZeZ2xhdmdHBV_TJ9jSBm6eFqN2JhaXQWoA-RjOcf-kIhI13EXK39g79uhitjqEfDJRtO-5BrqVvIH1ITwlmHUcJIT43M3jcTgwh909ovhVBLEL7TGizd5weSV7ze8P8t03pN1UN5euAy66hzkn-5HbVwpUrg5L1d4m3MfKT7vrcY0Zln8aHlY5F6Sw4LRtg1YpwXWHsYXZOfkTf6KoIqvC_9QivVcH0y63_"
+        }
+      }
     },
     {
       "id": "oliver",
@@ -33,13 +93,41 @@
       "breed": "Miniature Poodle",
       "breed_es": "Caniche Miniatura",
       "price": "$5,200",
+      "priceValue": 5200,
       "age": "8 Weeks",
       "age_es": "8 Semanas",
       "gender": "Male",
       "gender_es": "Macho",
+      "color": "Apricot",
+      "color_es": "Albaricoque",
       "badge": "popular",
       "available": true,
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCL8p86Ct_OlTq3MP4Xuf7wuw-CPGlMZyXKOCHJBb_D2Kcu04sPjkszAkaz7f-IhfVTEnug7GL_H8KuuQi98d2gYo7TxIBdQbR9BrGuU83S-klc94tFv5qwpnPSeRZrPS4BIT7c9Ds08qGEmmvdPhc5bqHhhxsFmCnxKykOKMKtoxYIY5NwMZ6KRVf5Hd-gykdUEBAz8pdrRwC-mwsAHM2TKoTRqZqEwlfe8YYjv8lKP0IJiq0rMA99e0c6KrQzbVpmXu4W0FEVXb9P"
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCL8p86Ct_OlTq3MP4Xuf7wuw-CPGlMZyXKOCHJBb_D2Kcu04sPjkszAkaz7f-IhfVTEnug7GL_H8KuuQi98d2gYo7TxIBdQbR9BrGuU83S-klc94tFv5qwpnPSeRZrPS4BIT7c9Ds08qGEmmvdPhc5bqHhhxsFmCnxKykOKMKtoxYIY5NwMZ6KRVf5Hd-gykdUEBAz8pdrRwC-mwsAHM2TKoTRqZqEwlfe8YYjv8lKP0IJiq0rMA99e0c6KrQzbVpmXu4W0FEVXb9P",
+      "images": [
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuCL8p86Ct_OlTq3MP4Xuf7wuw-CPGlMZyXKOCHJBb_D2Kcu04sPjkszAkaz7f-IhfVTEnug7GL_H8KuuQi98d2gYo7TxIBdQbR9BrGuU83S-klc94tFv5qwpnPSeRZrPS4BIT7c9Ds08qGEmmvdPhc5bqHhhxsFmCnxKykOKMKtoxYIY5NwMZ6KRVf5Hd-gykdUEBAz8pdrRwC-mwsAHM2TKoTRqZqEwlfe8YYjv8lKP0IJiq0rMA99e0c6KrQzbVpmXu4W0FEVXb9P"
+      ],
+      "description": "Oliver is a charming Miniature Poodle with exceptional intelligence and elegance. Perfect companion for families looking for a hypoallergenic breed.",
+      "description_es": "Oliver es un encantador Caniche Miniatura con inteligencia y elegancia excepcional. Compañero perfecto para familias que buscan una raza hipoalergénica.",
+      "health": {
+        "vaccinations": true,
+        "registered": true,
+        "microchipped": false,
+        "healthGuarantee": true
+      },
+      "parents": {
+        "sire": {
+          "name": "Champ",
+          "title": "Champion Line",
+          "description": "Apricot. International Champion bloodline.",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDp7RZlmseaAvpFGl9RzLNR4pG-TOto0CXXpfYtQsqePWKmaOkeovOrZOf4MUgFvDqZCYv_b1wm3S5mRCEKiFacNYoVswt2cjU4sggleeh0NY5O9IxIqDlMmKEDvSNI219zDVCjhd0_2hmn1vBPhKEV9ozlOuhpQaYrYxdTIg26aGF3WQUIdAN1cyd9J_SU_odUSVQElU9CoBaVVrpxUnUX9qx2PKqaXCalk8cjMpTjNUBhwi8TOI8gOD805oxrB9lhJWUQA1GOzMnZ"
+        },
+        "dam": {
+          "name": "Princess",
+          "title": "Health Tested",
+          "description": "Red, Compact Structure. Clear DNA panels.",
+          "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAkdIAx_2kwjvOccRQH-lbeVDw271AwZ2mHXjwn4ghf4ZeZ2xhdmdHBV_TJ9jSBm6eFqN2JhaXQWoA-RjOcf-kIhI13EXK39g79uhitjqEfDJRtO-5BrqVvIH1ITwlmHUcJIT43M3jcTgwh909ovhVBLEL7TGizd5weSV7ze8P8t03pN1UN5euAy66hzkn-5HbVwpUrg5L1d4m3MfKT7vrcY0Zln8aHlY5F6Sw4LRtg1YpwXWHsYXZOfkTf6KoIqvC_9QivVcH0y63_"
+        }
+      }
     }
   ],
   "testimonials": [

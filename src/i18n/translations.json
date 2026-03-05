@@ -2,12 +2,16 @@
   "en": {
     "nav": {
       "available": "Available Puppies",
+      "about": "About",
+      "care": "Care Guide",
       "story": "Our Story",
       "process": "Process",
       "testimonials": "Testimonials"
     },
     "header": {
-      "inquire": "INQUIRE NOW"
+      "inquire": "INQUIRE NOW",
+      "switchToEn": "Switch to English",
+      "switchToEs": "Cambiar a Español"
     },
     "hero": {
       "badge": "Elite Breeding",
@@ -89,17 +93,94 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "cookies": "Cookie Policy"
+    },
+    "mobileNav": {
+      "home": "Home",
+      "puppies": "Pups",
+      "care": "Care",
+      "about": "About",
+      "process": "Contact"
+    },
+    "petDetails": {
+      "breadcrumbHome": "Home",
+      "breadcrumbPuppies": "Available Puppies",
+      "age": "Age",
+      "color": "Color",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "description": "Description",
+      "available": "Available",
+      "reserved": "Reserved",
+      "healthTitle": "Health & Pedigree",
+      "vaccinations": "Full Vaccinations",
+      "registered": "AKC Registered",
+      "microchipped": "Microchipped",
+      "healthGuarantee": "Health Guarantee",
+      "parentsTitle": "Meet the Parents",
+      "parentsSubtitle": "Premium bloodlines and champion heritage",
+      "sire": "Sire",
+      "dam": "Dam",
+      "championLine": "Champion Line",
+      "healthTested": "Health Tested",
+      "requestVideo": "Request Live Video",
+      "inquireWhatsapp": "Inquire via WhatsApp",
+      "bookVisit": "Book a Visit",
+      "adopt": "Adopt",
+      "fullRights": "Full Rights",
+      "notFound": "Puppy not found",
+      "backToPuppies": "Back to Available Puppies"
+    },
+    "about": {
+      "badge": "Our Journey",
+      "title": "A Decade of",
+      "titleHighlight": "Excellence",
+      "subtitle": "From a small family passion to an internationally recognized standard for premium dog breeding. Explore the milestones that defined us.",
+      "statsYears": "Years of Experience",
+      "statsFamilies": "Happy Families",
+      "statsChampions": "Champion Lines",
+      "statsGuarantee": "Health Guarantee",
+      "ctaTitle": "Be Part of Our Next Chapter",
+      "ctaSubtitle": "Join the Elite Paws family and give your home the premium canine companion it deserves.",
+      "ctaButton": "View Available Puppies",
+      "ctaSecondary": "Download Brochure",
+      "timeline": {
+        "2010": { "title": "Our First French Bulldog", "description": "It all started with Buster, our founding sire. Elite Paws was established with a singular vision: to breed healthy, well-socialized French Bulldogs that exceed breed standards." },
+        "2015": { "title": "NKC Certification", "description": "A major milestone as we received full accreditation from the National Kennel Club. Our rigorous health screening and genetic testing protocols set a new industry benchmark." },
+        "2020": { "title": "The Modern Facility", "description": "We opened our state-of-the-art 5,000 sq ft facility. Featuring climate-controlled suites, indoor/outdoor play areas, and a full-time veterinary observation wing." },
+        "2024": { "title": "Elite Digital Launch", "description": "Expanding our legacy to the global stage. Our new digital platform allows families worldwide to reserve puppies, track development through live cams, and access 24/7 care support." }
+      }
+    },
+    "care": {
+      "badge": "Puppy Care Guide",
+      "title": "Puppy Care",
+      "titleHighlight": "Guide",
+      "subtitle": "Everything you need to know about raising your new premium companion, from their first bowl of kibble to their first park run.",
+      "searchPlaceholder": "Search for specific care topics (e.g. Diet, Vaccines)",
+      "searchButton": "Find",
+      "topics": {
+        "nutrition": { "title": "Nutrition & Diet", "description": "Optimal fuel for growth and development tailored to breed size." },
+        "exercise": { "title": "Exercise & Play", "description": "Keeping them active without overexerting growing joints." },
+        "grooming": { "title": "Grooming Tips", "description": "Maintaining a healthy coat and skin for that show-ready look." },
+        "health": { "title": "Health & Vaccines", "description": "Critical schedules to protect your puppy from common illnesses." }
+      },
+      "breedSection": { "title": "Breed-Specific", "titleHighlight": "Expertise", "readGuide": "Read Guide", "topRecommendation": "Top Recommendation", "downloadGuide": "Download Breed Guide (PDF)" },
+      "cta": { "title": "Need urgent professional advice?", "subtitle": "Connect with our licensed veterinary partners directly for a personalized consultation regarding your puppy's health.", "button": "Consult a Vet via WhatsApp" }
     }
   },
   "es": {
     "nav": {
       "available": "Cachorros Disponibles",
+      "about": "Nosotros",
+      "care": "Guía de Cuidados",
       "story": "Nuestra Historia",
       "process": "Proceso",
       "testimonials": "Testimonios"
     },
     "header": {
-      "inquire": "CONSULTAR AHORA"
+      "inquire": "CONSULTAR AHORA",
+      "switchToEn": "Switch to English",
+      "switchToEs": "Cambiar a Español"
     },
     "hero": {
       "badge": "Cría Elite",
@@ -144,7 +225,7 @@
     },
     "pups": {
       "title": "Cachorros Destacados",
-      "subtitl": "Selecciones seleccionadas de nuestras últimas camadas de líneas campeón. Cada cachorro viene con certificaciones de salud completas.",
+      "subtitle": "Selecciones seleccionadas de nuestras últimas camadas de líneas campeón. Cada cachorro viene con certificaciones de salud completas.",
       "badges": {
         "new": "Nuevo",
         "reserved": "Reservado",
@@ -181,6 +262,79 @@
       "privacy": "Política de Privacidad",
       "terms": "Términos de Servicio",
       "cookies": "Política de Cookies"
+    },
+    "mobileNav": {
+      "home": "Inicio",
+      "puppies": "Cachorros",
+      "care": "Cuidados",
+      "about": "Nosotros",
+      "process": "Contacto"
+    },
+    "petDetails": {
+      "breadcrumbHome": "Inicio",
+      "breadcrumbPuppies": "Cachorros Disponibles",
+      "age": "Edad",
+      "color": "Color",
+      "gender": "Género",
+      "male": "Macho",
+      "female": "Hembra",
+      "description": "Descripción",
+      "available": "Disponible",
+      "reserved": "Reservado",
+      "healthTitle": "Salud y Pedigree",
+      "vaccinations": "Vacunas Completas",
+      "registered": "Registrado AKC",
+      "microchipped": "Microchip",
+      "healthGuarantee": "Garantía de Salud",
+      "parentsTitle": "Conoce a los Padres",
+      "parentsSubtitle": "Líneas de sangre premium y herencia de campeones",
+      "sire": "Padre",
+      "dam": "Madre",
+      "championLine": "Línea de Campeón",
+      "healthTested": "Salud Verificada",
+      "requestVideo": "Solicitar Video en Vivo",
+      "inquireWhatsapp": "Consultar por WhatsApp",
+      "bookVisit": "Reservar Visita",
+      "adopt": "Adoptar",
+      "fullRights": "Derechos Completos",
+      "notFound": "Cachorro no encontrado",
+      "backToPuppies": "Volver a Cachorros Disponibles"
+    },
+    "about": {
+      "badge": "Nuestra Trayectoria",
+      "title": "Una Década de",
+      "titleHighlight": "Excelencia",
+      "subtitle": "Desde una pequeña pasión familiar hasta un estándar reconocido internacionalmente para la cría premium de perros. Explora los hitos que nos definieron.",
+      "statsYears": "Años de Experiencia",
+      "statsFamilies": "Familias Felices",
+      "statsChampions": "Líneas de Campeones",
+      "statsGuarantee": "Garantía de Salud",
+      "ctaTitle": "Sé Parte de Nuestro Próximo Capítulo",
+      "ctaSubtitle": "Únete a la familia Elite Paws y dale a tu hogar el compañero canino premium que merece.",
+      "ctaButton": "Ver Cachorros Disponibles",
+      "ctaSecondary": "Descargar Brochure",
+      "timeline": {
+        "2010": { "title": "Nuestro Primer Bulldog Francés", "description": "Todo comenzó con Buster, nuestro sire fundador. Elite Paws fue establecida con una visión singular: criar Bulldogs Franceses saludables y bien socializados que excedan los estándares de la raza." },
+        "2015": { "title": "Certificación NKC", "description": "Un hito importante al recibir la acreditación completa del National Kennel Club. Nuestros rigurosos protocolos de detección de salud y pruebas genéticas establecieron un nuevo estándar en la industria." },
+        "2020": { "title": "Las Instalaciones Modernas", "description": "Abrimos nuestra instalación de última generación de 5,000 pies cuadrados. Con suites climatizadas, áreas de juego interior/exterior y un ala de observación veterinaria de tiempo completo." },
+        "2024": { "title": "Lanzamiento Digital Elite", "description": "Expandiendo nuestro legado a nivel global. Nuestra nueva plataforma digital permite a familias de todo el mundo reservar cachorros, seguir su desarrollo a través de cámaras en vivo y acceder a soporte de cuidado 24/7." }
+      }
+    },
+    "care": {
+      "badge": "Guía de Cuidado",
+      "title": "Guía de",
+      "titleHighlight": "Cuidado",
+      "subtitle": "Todo lo que necesitas saber sobre criar tu nuevo compañero premium, desde su primer tazón de comida hasta su primer paseo por el parque.",
+      "searchPlaceholder": "Buscar temas de cuidado (ej. Dieta, Vacunas)",
+      "searchButton": "Buscar",
+      "topics": {
+        "nutrition": { "title": "Nutrición y Dieta", "description": "Combustible óptimo para el crecimiento y desarrollo adaptado al tamaño de la raza." },
+        "exercise": { "title": "Ejercicio y Juego", "description": "Manteniéndolos activos sin sobrecargar sus articulaciones en crecimiento." },
+        "grooming": { "title": "Consejos de Aseo", "description": "Manteniendo un pelaje y piel saludables para ese aspecto de exposición." },
+        "health": { "title": "Salud y Vacunas", "description": "Calendarios críticos para proteger a tu cachorro de enfermedades comunes." }
+      },
+      "breedSection": { "title": "Experiencia Específica", "titleHighlight": "por Raza", "readGuide": "Leer Guía", "topRecommendation": "Recomendación Principal", "downloadGuide": "Descargar Guía de Raza (PDF)" },
+      "cta": { "title": "¿Necesitas asesoramiento profesional urgente?", "subtitle": "Conecta directamente con nuestros socios veterinarios licenciados para una consulta personalizada sobre la salud de tu cachorro.", "button": "Consultar un Veterinario por WhatsApp" }
     }
   }
 }

@@ -27,6 +27,7 @@ const { t, lang } = Astro.props;
 <script define:vars={{ t, lang }}>
 const CACHE_KEY = 'elite_paws_data';
 const CACHE_DURATION = 4 * 60 * 60 * 1000;
+const base = '/pegsApp';
 
 const translations = {
   pups: {
@@ -106,9 +107,9 @@ async function renderPuppies() {
             </div>
           </div>
           ${isAvailable ? `
-            <button class="w-full py-4 rounded-2xl bg-primary text-forest-dark font-black tracking-widest uppercase hover:bg-primary-dark transition-all flex items-center justify-center gap-2">
+            <a href="${base}/${lang}/pets/${pup.id}" class="w-full py-4 rounded-2xl bg-primary text-forest-dark font-black tracking-widest uppercase hover:bg-primary-dark transition-all flex items-center justify-center gap-2">
               ${translations.pups.viewDetails} <span class="material-symbols-outlined text-sm">favorite</span>
-            </button>
+            </a>
           ` : `
             <button class="w-full py-4 rounded-2xl border border-white/10 text-slate-500 font-black tracking-widest uppercase cursor-not-allowed">
               ${translations.pups.notAvailable}
