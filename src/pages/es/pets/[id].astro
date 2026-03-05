@@ -24,11 +24,11 @@ if (!puppy) {
   throw new Error(`Puppy not found: ${id}`);
 }
 
-const breed = lang === 'es' ? puppy.breed_es : puppy.breed;
-const age = lang === 'es' ? puppy.age_es : puppy.age;
-const gender = lang === 'es' ? puppy.gender_es : puppy.gender;
-const color = lang === 'es' ? puppy.color_es : puppy.color;
-const description = lang === 'es' ? puppy.description_es : puppy.description;
+const breed = puppy.breed_es || puppy.breed;
+const age = puppy.age_es || puppy.age;
+const gender = puppy.gender_es || puppy.gender;
+const color = puppy.color_es || puppy.color;
+const description = puppy.description_es || puppy.description;
 const sireName = puppy.parents?.sire?.name || '';
 const damName = puppy.parents?.dam?.name || '';
 const sireTitle = puppy.parents?.sire?.title || '';
@@ -43,7 +43,7 @@ const galleryImages = puppy.images && puppy.images.length > 0 ? puppy.images : [
 const availableLabel = puppy.available !== false ? t('petDetails.available') : t('petDetails.reserved');
 ---
 
-<Layout title={`${puppy.name} - ${breed} | Elite Paws`} lang={lang}>
+<Layout title={`${puppy.name} - ${breed} | Royal Puppy House`} lang={lang}>
   <!-- DEBUG: lang = {lang} -->
   <Header t={t} lang={lang} />
   

@@ -24,46 +24,9 @@ const base = '/pegsApp';
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
   </head>
   <body class="bg-forest-dark text-white overflow-x-hidden">
-    <div class="lang-switcher">
-      <a href={`${base}/en`} class:list={[{ active: lang === 'en' }]} class="text-xs font-bold">EN</a>
-      <a href={`${base}/es`} class:list={[{ active: lang === 'es' }]} class="text-xs font-bold">ES</a>
-    </div>
+    
     <slot />
   </body>
 </html>
 
-<style>
-  .lang-switcher {
-    position: fixed;
-    top: 1.5rem;
-    right: 6rem;
-    z-index: 1001;
-    display: flex;
-    gap: 0.5rem;
-    background: rgba(22, 37, 30, 0.9);
-    backdrop-filter: blur(8px);
-    padding: 0.5rem;
-    border-radius: 9999px;
-    border: 1px solid rgba(30, 215, 96, 0.2);
-  }
 
-  .lang-switcher a {
-    padding: 0.35rem 0.75rem;
-    border-radius: 9999px;
-    font-weight: 700;
-    font-size: 0.75rem;
-    color: #94a3b8;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .lang-switcher a:hover {
-    color: #1ed760;
-  }
-
-  .lang-switcher a.active {
-    background: #1ed760;
-    color: #0d1b15;
-  }
-</style>

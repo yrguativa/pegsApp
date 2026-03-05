@@ -1,4 +1,4 @@
-const CACHE_KEY = 'elite_paws_data';
+const CACHE_KEY = 'royal_puppy_house_data';
 const CACHE_DURATION = 4 * 60 * 60 * 1000; 
 
 export async function getCachedData() {

@@ -1,7 +1,7 @@
-# AGENTS.md - Elite Paws Landing Page
+# AGENTS.md - Royal Puppy House Landing Page
 
 ## Proyecto
-Landing page para negocio de cuidado de mascotas "Elite Paws" construido con Astro.
+Landing page para negocio de cuidado de mascotas "Royal Puppy House" construido con Astro.
 
 ## Variables de Colores (CSS)
 ```css
@@ -19,7 +19,7 @@ Landing page para negocio de cuidado de mascotas "Elite Paws" construido con Ast
 
 ## Estructura del Proyecto
 ```
-elite-paws/
+RoyalPuppyHouse-paws/
 ├── src/
 │   ├── components/
 │   │   ├── Header.astro
@@ -42,7 +42,7 @@ elite-paws/
 ```
 
 ## Diseño (Referencia)
-- **Header**: Logo "Elite Paws" + nav + botón "Book Now"
+- **Header**: Logo "Royal Puppy House" + nav + botón "Book Now"
 - **Hero**: Imagen perro derecha, título "Premium Pet Care for Your Furry Friend", subtítulo, 2 botones
 - **Features**: 4 servicios (Grooming, Boarding, Walking, Veterinary)
 - **About**: Imagen persona con perro + texto
@@ -76,7 +76,7 @@ Por cada funcionalidad completar un commit con mensaje convencional:
 - Icons: SVG inline o library
 
 ## Pasos de Ejecución
-1. `npm create astro@latest elite-paws -- --template minimal --typescript strict`
+1. `npm create astro@latest royal-puppy-house -- --template minimal --typescript strict`
 2. Configurar astro.config.mjs con site y base
 3. Crear estilos globales con variables CSS
 4. Crear componentes uno por uno
