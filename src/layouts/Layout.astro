@@ -1,14 +1,14 @@
 ---
 import '../styles/global.css';
-import { languages, type Language } from '../i18n/utils';
+import { type Language } from '../i18n/utils';
+import 'aos/dist/aos.css';
 
 interface Props {
   title: string;
   lang?: Language;
 }
 
-const { title, lang = 'en' } = Astro.props;
-const base = '/pegsApp';
+const { title} = Astro.props;
 ---
 
 <!DOCTYPE html class="dark">
@@ -26,6 +26,16 @@ const base = '/pegsApp';
   <body class="bg-forest-dark text-white overflow-x-hidden">
     
     <slot />
+    
+    <script>
+      import AOS from 'aos';
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 50,
+        easing: 'ease-out-cubic',
+      });
+    </script>
   </body>
 </html>
 

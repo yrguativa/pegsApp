@@ -8,20 +8,20 @@ interface Props {
 const { t } = Astro.props;
 ---
 
-<section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+<section id="hero" class="relative h-screen w-full overflow-hidden flex items-center justify-center">
   <div class="absolute inset-0 z-0">
     <div class="absolute inset-0 bg-gradient-to-b from-forest-dark/70 via-forest-dark/40 to-forest-dark z-10"></div>
     <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuyx5wwaP38XOtjpbfeKc75zOdd_fxbLuWWMxXYt-2druYjEpavyiup8_3lCR4Fy7EWw1qT1dtUKCon6t8f5-78Z7vMkqdz2sErzJuTKoYD8fk6mc1Bz6N8b7lOtGuvCSOL5ue6-v6AOlYkVh0JYaZOgrWon5KcOpv__1d8nkzGuXPdTb26gMJ3T6KGcdZZ-2wzqhuQfdbu4ZRG14MqpjIiERt1btq7VtRwAuTCyUR3LJ85EDgatHKfv4AYVjowgzDjdbeNl_T3-DJ" alt="Hero dog" />
   </div>
   <div class="relative z-20 text-center px-6 max-w-4xl mx-auto">
-    <span class="text-primary uppercase tracking-[0.5em] text-xs font-black mb-6 block drop-shadow-sm">{t('hero.badge')}</span>
-    <h1 class="text-5xl md:text-8xl font-black text-white leading-[1] tracking-tight mb-8">
+    <span data-aos="fade-down" data-aos-delay="100" class="text-primary uppercase tracking-[0.5em] text-xs font-black mb-6 block drop-shadow-sm">{t('hero.badge')}</span>
+    <h1 data-aos="fade-up" data-aos-delay="200" class="text-5xl md:text-8xl font-black text-white leading-[1] tracking-tight mb-8">
       {t('hero.title')} <br/><span class="text-primary italic text-glow">{t('hero.titleHighlight')}</span>
     </h1>
-    <p class="text-lg md:text-xl text-slate-200 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+    <p data-aos="fade-up" data-aos-delay="400" class="text-lg md:text-xl text-slate-200 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
       {t('hero.subtitle')}
     </p>
-    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+    <div data-aos="fade-up" data-aos-delay="600" class="flex flex-col sm:flex-row gap-6 justify-center items-center">
       <button class="w-full sm:w-auto rounded-full bg-primary px-10 py-5 text-forest-dark font-black text-lg hover:scale-105 transition-all shadow-[0_10px_30px_rgba(30,215,96,0.4)]">
         {t('hero.ctaPrimary')}
       </button>
@@ -31,7 +31,7 @@ const { t } = Astro.props;
       </button>
     </div>
   </div>
-  <div class="fixed bottom-8 right-8 z-[60]">
+  <div data-aos="fade-up" data-aos-delay="800" class="fixed bottom-8 right-8 z-[60]">
     <button class="flex items-center justify-center rounded-full h-16 w-16 md:w-auto md:px-6 bg-primary text-forest-dark shadow-[0_0_30px_rgba(30,215,96,0.5)] hover:scale-110 transition-transform gap-3 group">
       <span class="material-symbols-outlined text-3xl font-bold">chat</span>
       <span class="hidden md:block font-black text-sm uppercase">{t('hero.chat')}</span>

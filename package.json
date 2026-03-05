@@ -1,5 +1,5 @@
 {
-  "name": "royal-puppy-house",
+  "name": "royal-puppy-house-website",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",
+    "aos": "^2.3.4",
     "astro": "^5.17.1",
     "tailwindcss": "^4.2.1"
   }
