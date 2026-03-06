@@ -11,12 +11,12 @@ const { t, lang } = Astro.props;
 
 <section class="py-32 bg-forest-dark" id="puppies">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-20">
+    <div data-aos="fade-up" class="text-center mb-20">
       <h2 class="text-5xl font-black text-white mb-6 uppercase tracking-tight">{t('pups.title')}</h2>
       <div class="w-24 h-1.5 bg-primary mx-auto rounded-full mb-8"></div>
       <p class="text-slate-300 max-w-2xl mx-auto text-lg">{t('pups.subtitle')}</p>
     </div>
-    <div id="puppies-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+    <div id="puppies-grid" data-aos="fade-up" data-aos-delay="200" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
       <div class="col-span-full text-center text-slate-400">
         <span class="inline-block animate-pulse">Loading puppies...</span>
       </div>

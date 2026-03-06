@@ -29,6 +29,7 @@ const { title} = Astro.props;
     
     <script>
       import AOS from 'aos';
+      window.AOS = AOS;
       AOS.init({
         duration: 800,
         once: true,

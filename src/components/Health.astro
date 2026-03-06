@@ -11,14 +11,14 @@ const { t } = Astro.props;
 <section class="py-32 bg-forest-card border-y border-white/5">
   <div class="max-w-7xl mx-auto px-6">
     <div class="flex flex-col lg:flex-row items-center justify-between gap-12 mb-24">
-      <div class="max-w-2xl text-center lg:text-left">
+      <div data-aos="fade-right" class="max-w-2xl text-center lg:text-left">
         <span class="text-primary uppercase tracking-[0.4em] text-xs font-black mb-6 block">{t('health.badge')}</span>
         <h2 class="text-4xl md:text-6xl font-black text-white mb-8 tracking-tight">{t('health.title')}</h2>
         <p class="text-slate-300 text-lg md:text-xl font-light leading-relaxed">
           {t('health.subtitle')}
         </p>
       </div>
-      <div class="relative group">
+      <div data-aos="fade-left" data-aos-delay="200" class="relative group">
         <div class="absolute -inset-4 bg-primary/20 rounded-3xl blur-2xl group-hover:bg-primary/30 transition-all"></div>
         <div class="relative p-12 border border-primary/30 rounded-3xl bg-forest-dark shadow-2xl">
           <div class="absolute -top-4 -right-4 bg-primary text-forest-dark p-3 rounded-full shadow-lg">
@@ -31,7 +31,7 @@ const { t } = Astro.props;
       </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-      <div class="group p-8 rounded-3xl bg-forest-dark/50 border border-white/5 hover:border-primary/40 transition-all duration-500">
+      <div data-aos="fade-up" data-aos-delay="100" class="group p-8 rounded-3xl bg-forest-dark/50 border border-white/5 hover:border-primary/40 transition-all duration-500">
         <div class="mb-8 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-primary/10 border border-primary/20 group-hover:scale-110 transition-transform">
           <span class="material-symbols-outlined text-primary text-4xl">history_edu</span>
         </div>
@@ -40,7 +40,7 @@ const { t } = Astro.props;
           {t('health.pedigree.description')}
         </p>
       </div>
-      <div class="group p-8 rounded-3xl bg-forest-dark/50 border border-white/5 hover:border-primary/40 transition-all duration-500">
+      <div data-aos="fade-up" data-aos-delay="300" class="group p-8 rounded-3xl bg-forest-dark/50 border border-white/5 hover:border-primary/40 transition-all duration-500">
         <div class="mb-8 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-primary/10 border border-primary/20 group-hover:scale-110 transition-transform">
           <span class="material-symbols-outlined text-primary text-4xl">medical_services</span>
         </div>
@@ -49,7 +49,7 @@ const { t } = Astro.props;
           {t('health.veterinary.description')}
         </p>
       </div>
-      <div class="group p-8 rounded-3xl bg-forest-dark/50 border border-white/5 hover:border-primary/40 transition-all duration-500">
+      <div data-aos="fade-up" data-aos-delay="400" class="group p-8 rounded-3xl bg-forest-dark/50 border border-white/5 hover:border-primary/40 transition-all duration-500">
         <div class="mb-8 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-primary/10 border border-primary/20 group-hover:scale-110 transition-transform">
           <span class="material-symbols-outlined text-primary text-4xl">vaccines</span>
         </div>

@@ -49,7 +49,7 @@ const availableLabel = puppy.available !== false ? t('petDetails.available') : t
   <main class="pt-32 pb-20 bg-forest-dark min-h-screen">
     <div class="max-w-7xl mx-auto px-6 lg:px-20">
       <!-- Breadcrumbs -->
-      <nav class="flex items-center gap-2 mb-8 text-sm text-slate-400">
+      <nav data-aos="fade-right" class="flex items-center gap-2 mb-8 text-sm text-slate-400">
         <a class="hover:text-primary transition-colors" href={`${base}/${lang}`}>{t('petDetails.breadcrumbHome')}</a>
         <span class="material-symbols-outlined text-xs">chevron_right</span>
         <a class="hover:text-primary transition-colors" href={`${base}/${lang}#puppies`}>{t('petDetails.breadcrumbPuppies')}</a>
@@ -59,7 +59,7 @@ const availableLabel = puppy.available !== false ? t('petDetails.available') : t
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <!-- Left: Image Gallery -->
-        <div class="lg:col-span-7 flex flex-col gap-4">
+        <div data-aos="fade-right" class="lg:col-span-7 flex flex-col gap-4">
           <div class="relative aspect-square w-full rounded-xl overflow-hidden bg-forest-card border border-white/5 group">
             <div 
               class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
@@ -91,7 +91,7 @@ const availableLabel = puppy.available !== false ? t('petDetails.available') : t
         </div>
 
         <!-- Right: Details -->
-        <div class="lg:col-span-5 flex flex-col gap-8">
+        <div data-aos="fade-left" data-aos-delay="200" class="lg:col-span-5 flex flex-col gap-8">
           <div>
             <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-2">Elite {breed}</h2>
             <h1 class="text-5xl font-black text-white mb-2">{puppy.name}</h1>
@@ -171,7 +171,7 @@ const availableLabel = puppy.available !== false ? t('petDetails.available') : t
 
       <!-- Parents Section -->
       {puppy.parents && (
-        <section class="mt-20">
+        <section data-aos="fade-up" class="mt-20">
           <div class="flex items-end justify-between mb-8">
             <div>
               <h2 class="text-3xl font-black text-white">{t('petDetails.parentsTitle')}</h2>
